@@ -1,0 +1,18 @@
+# Site settings
+title: GitJit - Sharing my datascience experience.
+email: jitheshc@gmail.com
+description: A blog to share my experience in datascience.
+url: "http://gitjit.com" # the base hostname & protocol for your site
+twitter_username: jitheshmenon
+github_username: gitjit
+paginate: 3
+
+# Build settings
+permalink: /:title
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  
+
+gems :
+  - jekyll-paginate

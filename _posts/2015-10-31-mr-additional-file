@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "MapReduce : Passing additional files"
+date:   2015-10-31 09:45:36
+categories:  hadoop
+author : Jithesh Chandrasekharan
+---
+
+In an earlier post, we discussed passing additional parameters to MapReduce Job. But there are cases in which we will have to pass some additional files during MapReduce. But since MapReduce runs in multiple nodes, we need to ensure that this additional file that mapper/reducer refers is in that particular node in which its running.  In this post we will disucss how to handle this. Let us say we need to find most popular movie from movie-lens database. If you download movie-lens data, there are 2 files in which we are interested in .  (u.data and u.item). The format of file is as shown here.
+
+{% gist bf054ff677010c6ebf99}
