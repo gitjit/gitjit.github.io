@@ -1,7 +1,7 @@
 # Site settings
-title: GitJit - Sharing my datascience experience.
+title: GitJit - A Bigdata technology journal.
 email: jitheshc@gmail.com
-description: A blog to share my experience in datascience.
+description: My experiments and experience on Bigdata technologies.
 url: "http://gitjit.com" # the base hostname & protocol for your site
 twitter_username: jitheshmenon
 github_username: gitjit
