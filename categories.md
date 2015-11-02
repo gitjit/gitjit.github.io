@@ -4,6 +4,27 @@ title: Categories
 permalink: /categories/
 ---
 
+{% for tag in site.categories %} 
+  <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+  <ul class="post-list">
+    {% assign pages_list = tag[1] %}  
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <li><a href="{{ post.url }}">{{ post.title  }}</a></li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+{% endfor %}
+
+
+
+
+
+{% comment %}
 
 {% for tag in site.categories %} 
   <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
@@ -12,7 +33,7 @@ permalink: /categories/
     {% for post in pages_list %}
       {% if post.title != null %}
       {% if group == null or group == post.group %}
-      <li><a href="{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+      <li><a href="{{ post.url }}">{{ post.title  }} <b class="post__sep">--</b> <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
       {% endif %}
       {% endif %}
     {% endfor %}
@@ -20,6 +41,8 @@ permalink: /categories/
     {% assign group = nil %}
   </ul>
 {% endfor %}
+
+{% endcomment %}
 
 {% comment %}
 

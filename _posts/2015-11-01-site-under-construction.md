@@ -2,7 +2,7 @@
 layout: post
 title:  "Site under Construction"
 date:   2015-11-01 09:45:36
-categories: spark hadoop
+categories: 
 author : Jithesh Chandrasekharan
 image: underconstruction.jpg
 comments: false
