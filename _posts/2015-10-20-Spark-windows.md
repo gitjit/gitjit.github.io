@@ -24,6 +24,7 @@ Step 3: Install Apache Spark.
    : Here I am using a version prebuilt for Hadoop 2.6 instead of building it from the source. Download it from <a target="_blank" href="http://spark.apache.org/downloads.html">here</a>
 
 **Download the tar package.**
+
 ![Spark Download](/img/spark-install.png)
 After downloading, un-tar it to a home folder for spark. Then go to the conf folder and change the log4j settings, that will be really helful in avoiding unwanted messages in your terminal. (log4j.rootCategory=WARN, console). After that rename the file to log4j.properties.
 
