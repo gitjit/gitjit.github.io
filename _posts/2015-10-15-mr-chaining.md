@@ -77,7 +77,6 @@ $ python wc_freq_counter.py book.txt >> out.txt
 
 Note : if your job is targetting multiple nodes , then sorting will happen only for the results in that particular node.
 
-<p style='color:red'>This is some red text.</p>
 
 Reference:
 <a  target="_blank" href = "https://pythonhosted.org/mrjob/"> MRJob Documentation </a>
