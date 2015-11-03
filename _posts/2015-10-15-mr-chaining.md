@@ -12,7 +12,7 @@ In this post I will be explaining how  to add chaining in your map reduce job. T
 
 I am using python’s MRJob package for writing the map reduce job. If you have a python environment already installed in your machine, you just need to use this command to install MRJob package. 
 
- $ pip install mrjob 
+<p style='color:blue' ><b>$ pip install mrjob </b></p>
 
 MRJob is pretty straight forward , helps us to focus on our problem and also enables us to scale this program across multiple node (EMR) from our command line.
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 {% endhighlight %}
 
-** What’s happening? **
+**What’s happening?**
 
 A job is defined by a class that inherits from MRJob. This class contains methods that define the stepsof your job.
 A “step” consists of a mapper, a combiner, and a reducer. All of those are optional, though you must have at least one. So you could have a step that’s just a mapper, or just a combiner and a reducer.
@@ -76,6 +76,8 @@ $ python wc_freq_counter.py book.txt >> out.txt
 {% endhighlight %}
 
 Note : if your job is targetting multiple nodes , then sorting will happen only for the results in that particular node.
+
+<p style='color:red'>This is some red text.</p>
 
 Reference:
 <a  target="_blank" href = "https://pythonhosted.org/mrjob/"> MRJob Documentation </a>
