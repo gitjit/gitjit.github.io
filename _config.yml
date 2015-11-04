@@ -13,6 +13,6 @@ markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   
-
+# need to install > gem install jekyll-paginate
 gems :
   - jekyll-paginate

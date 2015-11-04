@@ -2,7 +2,7 @@
 layout: post
 title:  "Apache Spark/IPythonNB Setup"
 date:   2015-10-20 7:40:22
-categories: Apache Spark
+categories: Spark
 author : Jithesh Chandrasekharan
 image: 
 comments: true
