@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Apache Spark/IPythonNB Setup"
+title:  "Spark : Install and IPythonNB Setup"
 date:   2015-10-20 7:40:22
 categories: Spark
 author : Jithesh Chandrasekharan
@@ -9,6 +9,8 @@ comments: true
 ---
 
 Apache Spark is an open source cluster computing framework originally developed in the AMPLab at University of California, Berkeley but was later donated to the Apache Software Foundation where it remains today. In contrast to Hadoop's two-stage disk-based MapReduce paradigm, Spark's multi-stage in-memory primitives provides performance up to 100 times faster for certain applications. By allowing user programs to load data into a cluster's memory and query it repeatedly, Spark is well-suited to machine learning algorithms.
+
+Spark itself is written in Scala, and runs on the Java Virtual Machine (JVM).To run Spark on either your laptop or a cluster, all you need is an installation of Java 6 or newer. If you wish to use the Python API you will also need a Python interpreter (version 2.6 or newer). Spark does not yet work with Python 3.
 
 **Setting up Spark in Windows**
 
@@ -43,7 +45,8 @@ HADOOP_HOME = C:\winutils
 Now we ar ready to run spark. So now go to spark home folder and start a terminal/console there and type 'pyspark'. You should find spark running.In order to ensure,let us run a simple spark program that creates an RDD from the readme file in the spark home and count number of lines.
 
 ![Spark Download](/img/spark-install1.png)
-If everything goes fine, you will see the line number, in my case its 98.
+If everything goes fine, you will see the line number, in my case its 98. You can see the spark-jobs using the web-ui in following address.(http://localhost:4040)
+
 
 **Setting up IPython Notebook**
 There are multiple ways you can do this, one method is creating IPython Notebook pyspark profile and other way to do this is by importing "findspark" module.I am going with second method.
