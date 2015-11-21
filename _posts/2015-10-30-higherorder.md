@@ -87,6 +87,25 @@ def sum_of(f:Int=>Int, a:Int, b:Int):Int=
 
 So we can use a function type as an argument. Where “f” represents a function that accepts and Int as parameter and returns Int . Now we can call the sum_of() as higher order function.
 
+One of the most frequently used high order functions on scala collections are foreach, map and filter.
+
+{% highlight scala %}
+
+ val a = Array(1,2,3,4,5,6,7,8,9,10)      
+ //> a  : Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+ a.foreach(println)           
+
+ a.map(x => x*x)                               
+  //> res5: Array[Int] = Array(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+   
+ a.map(_*2)                                     
+ //> res6: Array[Int] = Array(2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+   
+ a.filter(x => x%2 ==0)                         
+ //> res7: Array[Int] = Array(2, 4, 6, 8, 10)
+
+{% endhighlight %}
+
 
 
 
