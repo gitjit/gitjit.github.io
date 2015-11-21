@@ -5,7 +5,7 @@ description: My experiments with Bigdata technologies.
 url: "http://gitjit.com" # the base hostname & protocol for your site
 twitter_username: jitheshmenon
 github_username: gitjit
-paginate: 3
+paginate: 1
 
 # Build settings
 permalink: /:title
