@@ -77,15 +77,28 @@ def sum_of(f:Int=>Int, a:Int, b:Int):Int=
 	{
 		f(a) + sum_of(f,a+1,b)
 	}
-}                                         
-	
- sum_of(factorial, 1,3)      //> res2: Int = 9
- sum_of(x=>x*x*x, 1, 3)      //> res3: Int = 36
- sum_of(x=>x, 1, 3)          //> res4: Int = 6
+}                                         	
 
 {% endhighlight %}
 
-So we can use a function type as an argument. Where “f” represents a function that accepts and Int as parameter and returns Int . Now we can call the sum_of() as higher order function.
+Now we can redefine our functions as following..
+
+{% highlight scala %}
+
+def sum_of_ints(a: Int,b:Int) = sum_of(x=>x,a,b)
+                                                  
+def sum_of_cubes(a:Int,b:Int) = sum_of(x=>x*x*x, a, b)
+                                                 
+def sum_of_facts(a:Int,b:Int) = sum_of(factorial,a,b)
+                                               	
+sum_of_ints(1,3)    //> res2: Int = 6
+sum_of_cubes(1,3)   //> res3: Int = 36
+sum_of_facts(1, 3)  //> res4: Int = 9
+
+{% endhighlight scala %}
+
+
+So we can use a function type as an argument. Where “f” represents a function that accepts an Int as parameter and returns Int . Now we can call the sum_of() as higher order function.  Now we have seen that in the above function we are still repeating parameters a and b into sum function, Can it be even shorter getting rid of parameters ?  Answer is yes, and we will discuss that topic called "currying" in the next post. 
 
 One of the most frequently used high order functions on scala collections are foreach, map and filter.
 

@@ -17,7 +17,7 @@ In Scala, we can pass parameters to a function in two diffrent ways. Call by Val
       println("Getting time in nano seconds")
       System.nanoTime
    }
-   def delayed( t: => Long ) = {
+   def delayed( t: Long ) = {
       println("In delayed method")
       println("Param: " + t)
       t
@@ -31,7 +31,7 @@ In Scala, we can pass parameters to a function in two diffrent ways. Call by Val
 
 {% endhighlight %}
 
-So in this case, you can see the both calls in delayed() is outputting same time in nano seconds. Now let us try Call By Name.
+So in this case, you can see the both calls in delayed() is outputting same time in nano seconds. Now let us try Call By Name.A call-by-name mechanism passes a code block to the callee and each time the callee accesses the parameter, the code block is executed and the value is calculated. Here, we declared the delayed method, which takes a call-by-name parameter by putting the => symbol between the variable name and the type.
 
 {% highlight scala %}
 
@@ -42,7 +42,7 @@ object test {
       println("Getting time in nano seconds")
       System.nanoTime
    }                                              //> get_time: ()Long
-   def delayed( t: => Long ) = {
+   def delayed( t: => Long ) = {   //call by name
       println("In delayed method")
       println("Param: " + t)
       t
@@ -60,7 +60,7 @@ object test {
 
 {% endhighlight %}
 
-Thus you can see in second case, the function is evaluated only once its called inside  other function.
+Here, delayed prints a message demonstrating that the method has been entered. Next, delayed prints a message with it's value. Finally, delayed returns t.
 
 
 
