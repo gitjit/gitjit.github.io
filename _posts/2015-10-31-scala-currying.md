@@ -21,7 +21,7 @@ val arr1 = Array.tabulate(10)(i => i*i) /
 
 {% endhighlight %}
 
-In our previous <a target="_blank" href = "/higherorder">post</a>, we discussed higher order functions in scala and we found that in sum_of function we were taking multiple arguments and let us use currying technique to optimize that. 
+In our previous <a target="_blank" href = "/scala-higherorder-methods">post</a>, we discussed higher order functions in scala and we found that in sum_of function we were taking multiple arguments and let us use currying technique to optimize that. 
 {% highlight scala %}
 
 def sum_of(f:Int=>Int, a:Int, b:Int):Int=

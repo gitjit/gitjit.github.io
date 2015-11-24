@@ -8,7 +8,7 @@ image:
 comments: true
 ---
 
-In our previous discussion we learned about currying using the concept of sumOf. In this post we will try to apply some Scala syntactical sugar on that function, write a productOf function , defining a factorial using that productOf function and then we will try to generalize sumOf and productOf, which can considered as a version of MapReducing.
+In our previous <a target="_blank" href = "/scala-currying">post</a> we learned about currying using the concept of sumOf. In this post we will try to apply some Scala syntactical sugar on that function, write a productOf function , defining a factorial using that productOf function and then we will try to generalize sumOf and productOf, which can considered as a version of MapReducing.
 
 **SumOF**
 

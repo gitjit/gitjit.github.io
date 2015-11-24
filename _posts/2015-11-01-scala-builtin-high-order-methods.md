@@ -8,7 +8,7 @@ image:
 comments: true
 ---
 
-Now we have a good understanding of high order functions and how they works. Now let us look into some built-in high order methods in scala collections and see how handy they are.
+Now we have a good understanding of high order functions and how they works. Now let us look into some built-in high order methods in scala collections and see how handy they are. The methods available are vast and we are covering some of the most useful methods.Please refer <a target="_blank" href = "http://www.scala-lang.org/api/current/#package">scala-api-docs</a> for deeper understanding.
 
 **foreach**
 Applies a function f to all elements of this array.
