@@ -6,6 +6,7 @@
 	@include e(title) {
 		@extend %hdln-prim;
 		margin-bottom: em(70px, 42px);
+		font-size: em(28px);
 
 		@include m(grouped) {
 			@extend %hdln-prim;

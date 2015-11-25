@@ -12,9 +12,11 @@
 		}
 	}
 	@include e(header) {
+		font-size: em(15px);
 		@include mq(medium) {
 		  margin-top: em(50px);
 		  margin-bottom: em(44px);
+
   	}
 	}
 	@include e(content) {
