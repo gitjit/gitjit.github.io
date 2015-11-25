@@ -6,9 +6,10 @@
 	text-transform: uppercase;
 	font-weight: $font-weight--bold;
 	font-size: em(20px);
+	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 	display: block;
 	text-align: center;
-	color: darken($color-primary, 15%);
+	color: darken($color-primary, 35%);
 	@include mq(small) {
 	  margin-top: 20px;
 	  margin-bottom: 20px; 

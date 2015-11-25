@@ -17,7 +17,7 @@
   padding: em(8px, 20px);
   border-bottom: 2px solid transparent;
   @include mq(small) {
-    border-bottom-color: palette(grey, xx-light);
+    border-bottom-color: palette(grey, xx-dark);
     padding-top: em(12px, 18px);
     padding-bottom: em(12px, 18px);
   }
@@ -38,7 +38,7 @@
 }
 
 %hdln-sec {
-  color: palette(grey, light);
+  color: palette(grey, dark);
   letter-spacing: $letter-space;
   font-weight: $font-weight--thin;
   font-size: em(24px);

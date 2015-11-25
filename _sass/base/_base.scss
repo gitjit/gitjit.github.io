@@ -7,10 +7,14 @@
 	box-sizing: border-box;
 }
 
+/*font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+
 body {
-	color: palette(grey);
+	/*color: palette(grey);*/
+  color: palette(black);
   font-size: $base__font-size;
-  font-family: $font-family--primary;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: $font-family--primary;*/
   line-height: ($base__line/$base__font-size);
 
 }
@@ -18,10 +22,12 @@ body {
 // Text
 
 h1 {
+
 	@extend %hdln-prim;
 }
 
 h2 {
+
 	@extend %hdln-sec;
 }
 
@@ -43,7 +49,8 @@ h4 {
 }
 
 a {
-	color: $color-primary; 
+	/*color: $color-primary; */
+	color: blue; 
 	text-decoration: none;
 	font-weight: $font-weight--medium;
 }

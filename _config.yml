@@ -12,7 +12,11 @@ permalink: /:title
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: true
   
 # need to install > gem install jekyll-paginate
 gems :
   - jekyll-paginate
+

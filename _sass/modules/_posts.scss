@@ -4,7 +4,7 @@
 
 .post {
 	@include e(item) {
-		border-bottom: 1px dotted palette(grey, light);
+		border-bottom: 1px dotted palette(grey, dark);
 		margin-bottom: em(40px);
 		padding-bottom: em(32px);
 		&:last-child {
@@ -29,7 +29,7 @@
 	}
 	@include e(author) {
 		color: $color-primary;
-		font-weight: $font-weight--bold;
+		font-weight: $font-weight--light;
 	}
 	@include e(sep) {
 		color: palette(grey, x-light);
