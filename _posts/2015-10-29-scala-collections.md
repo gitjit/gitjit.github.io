@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scala : Sequence"
+title:  "Scala : Collections"
 date:   2015-10-29 7:50:22
 categories: Scala
 author : Jithesh Chandrasekharan
@@ -98,6 +98,12 @@ val mainList = List(3, 2, 1) //List[Int] = List(3, 2, 1)
 val with4 = 4::mainList      //List[Int] = List(4, 3, 2, 1)
 val with43 = 43::mainList   //with43  : List[Int] = List(43, 3, 2, 1)
 mainList         //List[Int] = List(3, 2, 1)
+
+//you can also build a list using cons
+
+val lst1 = 1::2::3::Nil    //> lst1  : List[Int] = List(1, 2, 3)
+
+Nil represents an empty list.
 
 scala> val colors = List("red", "blue", "green")
 //colors: List[java.lang.String] = List(red, blue, green)
@@ -230,5 +236,64 @@ val b = 5.to(1).by(-1)
 //> b  : immutable.Range = Range(5, 4, 3, 2, 1)
 
 {% endhighlight %}
+
+**Tuple**
+Scala tuple combines a fixed number of items together so that they can be passed around as a whole. Unlike an array or list, a tuple can hold objects with different types but they are also immutable. Here is an example of a tuple holding an integer, a string, and the console
+
+{% highlight scala %}
+val t = (1, "hello", Console)
+//or
+val t = new Tuple3(1, "hello", Console)
+{% endhighlight %}
+
+The actual type of a tuple depends upon the number and of elements it contains and the types of those elements. Thus, the type of (99, "Luftballons") is Tuple2[Int, String]. The type of ('u', 'r', "the", 1, 4, "me") is Tuple6[Char, Char, String, Int, Int, String]
+Tuples are of type Tuple1, Tuple2, Tuple3 and so on. There currently is an upper limit of 22 in the Scala if you need more, then you can use a collection, not a tuple. For each TupleN type, where 1 <= N <= 22, Scala defines a number of element-access methods. Given the following definition:
+
+{% highlight scala %}
+val t = (4,3,2,1)
+val sum = t._1 + t._2 + t._3 + t._4
+{% endhighlight %}
+
+you can also create a tuple in this format, which comes handy when using maps
+
+{% highlight scala %}
+val tpl = 1 -> 2   //(1,2)
+{% endhighlight %}
+
+**Map**
+Scala map is a collection of key/value pairs. Any value can be retrieved based on its key. Keys are unique in the Map, but values need not be unique. Maps are also called Hash tables. There are two kinds of Maps, the immutable and the mutable. The difference between mutable and immutable objects is that when an object is immutable, the object itself can't be changed.
+
+By default, Scala uses the immutable Map. If you want to use the mutable Set, you'll have to import scala.collection.mutable.Map class explicitly. If you want to use both mutable and immutable Maps in the same, then you can continue to refer to the immutable Map as Map but you can refer to the mutable set as mutable.Map. Following is the example to declare immutable Maps as follows:
+
+{% highlight scala %}
+// A map with keys and values.
+val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
+
+var A:Map[Char,Int] = Map()
+A += ('I' -> 1)
+A += ('J' -> 5)
+A += ('K' -> 10)
+A += ('L' -> 100)
+
+{% endhighlight %}
+
+{% highlight scala %}
+
+object Test {
+ def main(args: Array[String]) {
+  val colors = Map("red" -> "#FF0000",
+                   "azure" -> "#F0FFFF",
+                   "peru" -> "#CD853F")
+
+  val nums: Map[Int, Int] = Map()
+
+  println( "Keys in colors : " + colors.keys )
+  println( "Values in colors : " + colors.values )
+  println( "Check if colors is empty : " + colors.isEmpty )
+  println( "Check if nums is empty : " + nums.isEmpty )
+ }
+}
+
+{% endhighlight scala %}
 
 In Scala everything is objects, so when you specify 1+2 (internall its (1).+(2) , where '+' is a function in Int object and in a similar way as shown above for rangest 5 to 1 = (5).to(1). Its a rule in scala that if you have a function with 1 or 0 arguments you can use it with infix notation omitting the . and (). But its a best practice to put () for functions that has side effects/mutations

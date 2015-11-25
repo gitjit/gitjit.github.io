@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scala : Collections"
+title:  "Scala : Collections Heirarchy"
 date:   2015-10-27 7:40:22
 categories: Scala
 author : Jithesh Chandrasekharan

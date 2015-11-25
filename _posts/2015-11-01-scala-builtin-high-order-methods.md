@@ -135,6 +135,31 @@ arr.foldLeft("0")(_+_)  //> res11: String = 012345
 
 {% endhighlight %}
 
+**find and option**
+Option type represents optional values. Instances of Option are either an instance of scala.Some or the object None. This is the mechanism Scala is using to avoid Null point exceptions.  (Java8 comes with equivalent Optional Type) . The use of Option type can be understood easily using 'find' method.
+
+*def find(p: (T) ⇒ Boolean): Option[T]*
+
+Finds the first element of the mutable indexed sequence satisfying a predicate, if any. 
+
+[p] : the predicate used to test elements.
+[returns] : an option value containing the first element in the mutable indexed sequence that satisfies p, or None if none exists.
+
+The advantage of option type is that you don't have to worry about checking null. option type has a lot of methods like map,flatmap,exists etc.. just like in collection. You can use get/getOrElse to retrieve the value from Some type as shown below.
+{% highlight scala %}
+
+val lst = List(6,7,8,9,10)
+st.find(_%3 == 0).map(_/3).getOrElse(0)          
+//> res12: Int = 2
+
+lst.find(_%11 == 0).map(_/3).getOrElse(0)         
+//> res12: Int = 0
+
+{% endhighlight scala %}
+
+In the example above we can see that when applying map on None didn't cause any issue, its like applying map on an empty list and no crashes.
+
+
                                          
 
 
