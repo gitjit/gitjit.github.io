@@ -6,6 +6,7 @@ categories: Scala
 author : Jithesh Chandrasekharan
 image: fc-climate.png
 comments: true
+meta: File I/O in Scala. We will be reading a CSV file.
 ---
 
 In this post we will doing a file I/O in Scala.We will be reading a csv file which contains climate records of Fort Collins (CO) downloaded from <a target="_blank" href = "http://cdiac.ornl.gov/epubs/ndp/ushcn/ushcn_map_interface.html">CDIAC</a> . The dataset is downloaded as a csv file containing daily climate recording starting 1893 to 2014. We will calculate lowest temperature, highest temperature and highest snow fall recorded in the region during this period.

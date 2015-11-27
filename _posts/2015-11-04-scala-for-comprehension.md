@@ -6,6 +6,7 @@ categories: Scala
 author : Jithesh Chandrasekharan
 image: 
 comments: true
+meta: For loop in Scala is not a simple loop, but its actually a For Comprehension.
 ---
 
 For loop in Scala is not a simple loop, but its actually a For Comprehension.A For Comprehension not only offers the ability to iterate over something like a List, it also provides filtering options and the ability to generate new Lists. In this example, I am just brushing up the basic for comprehension syntax and we will look into much elaborate sample later.

@@ -5,7 +5,7 @@ date:   2015-10-21 7:40:22
 categories: Spark
 author : Jithesh Chandrasekharan
 image: spark-echosystem.png
-comments: true
+comments: true 
 ---
 
 **What/Why Apache Spark?:**

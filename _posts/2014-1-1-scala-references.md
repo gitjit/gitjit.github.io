@@ -8,6 +8,8 @@ image:
 comments: true
 ---
 
+
+[Scala School : Twitter](https://twitter.github.io/scala_school/index.html)
 [Scala Basics : Playlist](https://www.youtube.com/playlist?list=PLdzsTnb5Eq9-9--cYrpkoVbtJ-oKcGOlw)
 [FP using Scala : Martin Odersky : Coursera](https://class.coursera.org/progfun-004/lecture)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spark : Install and IPythonNB Setup"
+title:  "Spark : Installation,IPythonNB Setup"
 date:   2015-10-20 7:40:22
 categories: Spark
 author : Jithesh Chandrasekharan

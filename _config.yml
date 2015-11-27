@@ -6,6 +6,7 @@ url: "http://datapetals.com" # the base hostname & protocol for your site
 twitter_username: jitheshmenon
 github_username: gitjit
 paginate: 4
+#excerpt_separator: <!--more-->
 
 # Build settings
 permalink: /:title

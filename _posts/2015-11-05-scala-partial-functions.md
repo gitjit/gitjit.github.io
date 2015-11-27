@@ -6,6 +6,7 @@ categories: Scala
 author : Jithesh Chandrasekharan
 image: 
 comments: true
+meta: In Scala a function can be either total or partial. A function is total if it is designed to work for any values of its domain.
 ---
 
 In Scala a function can be either total or partial. A function is total if it is designed to work for any values of its domain. A canonical example for total function is "Multiplication",(a X b) whose domain is numbers and I can give any two numbers to the function and it produces a result. So it accepts any values in its domain.  Where as if you consider division (a / b), I can pass any number for a but b cannot be 0. So division is naturally a partial function.
