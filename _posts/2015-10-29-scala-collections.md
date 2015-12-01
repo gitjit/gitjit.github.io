@@ -129,6 +129,12 @@ val colors2 = List("white","black","red", "blue") //> colors2  : List[String] = 
 
 colors.diff(colors2)                              //> res25: List[String] = List(green, pink, magenta)
 
+//combine two lists using cons operator
+val lst1 = 1::2::3::Nil                         //> lst1  : List[Int] = List(1, 2, 3)
+val lst2 = 4::5::6::Nil                         //> lst2  : List[Int] = List(4, 5, 6)
+val lst3 = lst1 ::: lst2                        //> lst3  : List[Int] = List(1, 2, 3, 4, 5, 6)
+  
+
 //mkstring
 colors.mkString(",")                              //> res26: String = red,blue,green,pink,magenta
 colors.mkString(" ")                              //> res27: String = red blue green pink magenta

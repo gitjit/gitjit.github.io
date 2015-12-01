@@ -6,6 +6,7 @@ categories: Scala
 author : Jithesh Chandrasekharan
 image: 
 comments: true
+meta: Post is about recursion in Scala, Stack over flow error as iterations increases and a file parser using Scala recursion.
 ---
 
 Recursion means "defining a problem in terms of itself". This can be a very powerful tool in writing algorithms. Recursion comes directly from Mathematics, where there are many examples of expressions written in terms of themselves. For example, the Fibonacci sequence is defined as: F(i) = F(i-1) + F(i-2). Recursion is the process of defining a problem (or the solution to a problem) in terms of (a simpler version of) itself. 
@@ -135,5 +136,24 @@ So after throwing 1000 darts we got a value ~3.17. We can improve the result by 
 
 So as we increased the iterations, we got a stack flow error !  How can we solve this ? The solution to this problem in Tail Recursion, which we will discuss in next post.
 
+**Example : File Parser**
+This is a sample which iterates through all folder and subfolders and lists all files. By default it search in local folder.
+{% highlight scala %}
+def parseFiles(rootLocation:String = "."):Unit=
+  {
+    val root = new File(rootLocation)
+    if (root.isFile())
+    {
+        println(root.getName)
+    }
+    else
+    {
+      for(file <- root.listFiles())parseFiles(file.getCanonicalPath)
+      
+    }
+    root
+  }                  //> parseFiles: (rootLocation: String)Unit 
+  parseFiles()        
+{% endhighlight %}
 
 

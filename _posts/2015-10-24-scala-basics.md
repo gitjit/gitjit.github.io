@@ -6,6 +6,7 @@ categories: Scala
 author : Jithesh Chandrasekharan
 image: 
 comments: true
+meta: Scala Variables, Functions, Anonymous Functions and Partial Applicable Functions.
 ---
 Scala is an acronym for “Scalable Language”. This means that Scala grows with you.Up until a few years ago, to make applications perform better you installed a faster processor. But we’ve pretty much maxed out the speed limit for individual chips. So best way to get better performance now is to use chips with multiple cores, all operating at a high speed, and to spread the workload among them. So instead of writing a program that runs on a single core, you have to write a program that’s smarter about deploying the workloads among many cores.
 
@@ -132,17 +133,71 @@ val adder = (x:Int) => x+1
   adder(1)     //2
 
 {% endhighlight %}
-As shown above we have assigned the anonymous function to a variable named added.A Function is a set of traits. Specifically, a function that takes one argument is an instance of a Function1 trait. This trait defines the apply() syntactic sugar allowing us to call an object like you would a function. (we will look into apply function deeply when we discuss objects and class). So internally above anonymous function is represented as following.
+As shown above we have assigned the anonymous function to a variable named added.So the variable now holds a function object. We will discuss in detail the diffrence between functions and methods in scala,but for now keep in mind that functions in Scala are actually function objects. As shown below a function with 1 argument is an object extended from Function1 trait.
+
 {% highlight scala %}
 scala> object addOne extends Function1[Int, Int] {
      |   def apply(m: Int): Int = m + 1
      | }
 //defined module addOne
-
-scala> addOne(1)
+scala> addOne(1) //addOne.apply(1)
 res2: Int = 2
 {% endhighlight %}
-There is Function0 through 22. Why 22? It’s an arbitrary magic number. I’ve never needed a function with more than 22 arguments so it seems to work out.The syntactic sugar of apply helps unify the duality of object and functional programming. You can pass classes around and use them as functions and functions are just instances of classes under the covers.
+As you can see the body of the function we defined is moved to apply() method in the object. So if you want to call the function, you have to call the apply() method in the function object. But Scala has added syntactic sugar so that when you call function object with (),it gets translated to calling apply().
+
+There are Function0 through 22. Why 22? It’s an arbitrary magic number. I’ve never needed a function with more than 22 arguments so it seems to work out.The syntactic sugar of apply helps unify the duality of object and functional programming. You can pass classes around and use them as functions and functions are just instances of classes under the covers.
+
+<u>Partially applied Function(not partial functions)</u>
+We can use wild cards (_) in parameter list to make the existing function act like a new function.
+
+{% highlight scala %}
+
+def multiply = (x:Int, y:Int) => x*y 
+  multiply(2,3) //res2: Int = 6
+def multiply2 = multiply(2, _:Int)//> multiply2: => Int => Int
+  multiply2(4) //> res3: Int = 8
+{% endhighlight %}
+You can partially apply any argument in the argument list, not just the last one.
+
+<u> Variable length arguments </u>
+Now let us consider a function that accepts variable length arguments.
+{% highlight scala %}
+def adder(args:Int*) =
+  {
+      var total = 0
+      for (i<-args) total +=i
+      total
+  }                                      
+  
+adder(2,3,4) //9
+{% endhighlight %}
+
+<u> Curried Function </u>
+Currying allows us to apply some arguments to your function now and others later. You can take any funtion with multiple arguments and curry it. Let us consider our regular multiplication method and let us curry it.
+{% highlight scala %}
+def multiply = (x:Int, y:Int) => x*y
+{% endhighlight %}
+curry it by spliting arguments
+{% highlight scala %}
+def multiply(x:Int)(y:Int) = x*y /*>multiply: (x: Int)(y: Int)Int*/
+{% endhighlight %}
+Now call it directly with 2 arguments
+{% highlight scala %}
+multiply(3)(3) //result:9
+{% endhighlight %}
+Now partially apply first param and call with second argument. As you can see once you apply first parameter it returns a function object, which we can call later with second argument.
+{% highlight scala %}
+val multiply2 = multiply(2)(_)//> multiply2  : Int => Int = <function1>
+multiply2(3) //6
+{% endhighlight %}
+Another example
+{% highlight scala %}
+def adder(m:Int, n:Int) = m+n  //> adder: (m: Int, n: Int)Int
+val curriedAdd = (adder _).curried //> curriedAdd  : Int => (Int => Int) = <function1>
+val add2 = curriedAdd(2) //> add2  : Int => Int = <function1>
+add2(3) //> res0: Int = 5
+{% endhighlight %}
+
 
 **Match Expressions**
 Match expressions are similar to switch statements in other languages but far more powerful. Let us see a simple example.
