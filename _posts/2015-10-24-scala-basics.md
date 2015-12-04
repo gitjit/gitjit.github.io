@@ -21,6 +21,13 @@ When you type scala command in terminal, it can behave in 3 diffrent ways.
 : $ scala hello.scala (will execute the script hello.scala)
 : $ scalac hellow.scala (compiles to bytecode (.class), which can be executed using scala command)
 
+Once you are in a Scala REPL, you can type scala commands or expressions and it gets evaluated and displays the results.
+{% highlight scala %}
+scala> 8 * 5 + 2 
+res0: Int = 42
+{% endhighlight %}
+As you can see Scala Interpreter reads an expression, evaluates it, prints it and reads next expression.This is called Read Evaluate Print Loop. (REPL).Technically, Scala program is not an interpreter. Behind the scenes, your input is quickly compiled into byte codes, and the bytecodes are executed by JVM. 
+
 **Types in Scala:**
 In Java if you have noticed primitive types starts with lower case(int, double etc..) and other object types starts with capital case. In Scala by default there are no primitive types , every thing is of object type.In Scala Int, Float, Double etc.. are all object types . Internally Scala compiler will convert them to primitives. So from a Scala developer point of view, everything is an Object type and compiler will take care of rest.Given below shows Scala's type hierarchy.
 
@@ -64,13 +71,17 @@ val incorrect = class MyClass(val value: String)
 illegal start of simple expression*/
 {% endhighlight %}
 
-In contrast, expressions return a value that (hopefully) informs the caller of the result of the operation. Simple values such as 5 and "Hello" are statements, as well as many other constructs in Scala. Take the if-else structure as an example:
+In contrast, expressions return a value that (hopefully) informs the caller of the result of the operation. Simple values such as 5 and "Hello" are statements, as well as many other constructs in Scala.Take the if-else structure as an example:
  
 {% highlight scala %}
 
 val x = 3
 val result = if ( x > 2) "great" else "less"
 
+{% endhighlight %}
+In Scala every constructs returns something. The void equivalent in Java here is Unit. Its important to remember that even assignment statements returns Unit. Since its internally a function. So never chain assignments in Scala.
+{% highlight scala %}
+ x = y = 1 //never do this.
 {% endhighlight %}
 
 <u>Code Blocks</u>
@@ -83,7 +94,7 @@ A code block is a way of grouping multiple expressions and a code block always r
   3 // returns 3
 }          
 {% endhighlight %}
-We can capture the result as shown here.
+In the example below we initialized a variable using code block.
 {% highlight scala %}
 val result =
 {
@@ -94,7 +105,14 @@ val result =
 }     
 {% endhighlight %}
 <u>if-else</u>
-The if/else expression takes the value of the branch selected at runtime. This value is captured and assigned to a variable. Furthermore, since the two branches produce values of type String, the compiler can assure result will be a String.Additionally, we can group multiple expressions and statements to form a larger expression using curly braces:
+Scala has an if/else construct with the same syntax as in Java or C++. However, in Scala, an if/else has a value, namely the value of the expression that follows the if or else. For example,
+*if (x > 0) 1 else -1*
+has a value of 1 or -1, depending on the value of x. You can put that value in a variable:
+*val s = if (x > 0) 1 else -1*
+This has the same effect as
+*if (x > 0) s = 1 else s = -1*
+
+You can also use code blocks if needed.
 
 {% highlight scala %}
 val result =
@@ -170,7 +188,10 @@ def adder(args:Int*) =
   }                                      
   
 adder(2,3,4) //9
+adder(1 to 10) // error
+adder(1 to 10: _*) // works
 {% endhighlight %}
+The second call to adder( ) fails because if adder is called with a single argument then it should be an integer not a range or List of integers. It can be solved by telling the compiler that you want the parameter to be considered as an argument sequence by appending : _*
 
 <u> Curried Function </u>
 Currying allows us to apply some arguments to your function now and others later. You can take any funtion with multiple arguments and curry it. Let us consider our regular multiplication method and let us curry it.
@@ -198,6 +219,29 @@ val add2 = curriedAdd(2) //> add2  : Int => Int = <function1>
 add2(3) //> res0: Int = 5
 {% endhighlight %}
 
+**Procedures**
+In Scala, a function that returns nothing (Unit) can be called a procedure.If the function body is enclosed in braces without a preceding = symbol, then the return type is Unit. Such a function is called a procedure. A procedure returns no value, and you only call it for its side effect. For example, the following procedure prints a string inside a box, like
+
+{% highlight scala %}
+ def drawSquare(s:String){  
+   println("*" * s.length + "**")
+   println("|" + s + "|")
+   println("*" * s.length + "**\n")   
+   }                                             
+   drawSquare("jitheshs") 
+{% endhighlight %}
+
+**Lazy Evaluation**
+Let us compare when a variable is initialized in Scala based on its declaration. We can declare a variable in 3 diffrent ways in Scala.
+
+{% highlight scala %}
+val words = scala.io.Source.fromFile("/usr/test").mkString
+  // Evaluated as soon as words is defined
+lazy val words = scala.io.Source.fromFile("/usr/test").mkString
+  // Evaluated the first time words is used
+def words = scala.io.Source.fromFile("/usr/test").mkString
+  // Evaluated every time words is used
+{% endhighlight %}
 
 **Match Expressions**
 Match expressions are similar to switch statements in other languages but far more powerful. Let us see a simple example.

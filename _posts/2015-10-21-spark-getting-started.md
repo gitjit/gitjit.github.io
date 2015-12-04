@@ -29,7 +29,9 @@ Spark runs on top of existing Hadoop Distributed File System (HDFS) infrastructu
 Spark is considered as an alternative to Hadoop MapReduce rather than a replacement to Hadoop. It’s not intended to replace Hadoop but to provide a comprehensive and unified solution to manage different big data use cases and requirements.Spark can create distributed datasets from any file stored in the Hadoop distributed filesystem (HDFS) or other storage systems supported by the Hadoop APIs (including your local filesystem, Amazon S3, Cassandra, Hive, HBase, etc.). It’s important to remember that Spark does not require Hadoop; it simply has support for storage systems implementing the Hadoop APIs. Spark supports text files, SequenceFiles, Avro, Parquet, and any other Hadoop InputFormat. 
 
 **Spark Unified Stack:**
-The image above shows the spark's unified stack. All components are closely integrated to spark-core, which is the computational engine responsible for scheduling, distributing and monitoring applications consisting of multiple computational tasks that spawn across multiple worker machines in the cluster.
+The image above shows the spark's unified stack. All components are closely integrated to spark-core, which is the computational engine responsible for scheduling, distributing and monitoring applications consisting of multiple computational tasks that spawn across multiple worker machines in the cluster.In case of hadoop, we will have to use seperate frameworks based on our needs. For example Storm for stream processing, hive for querying, scalading for reducing mapreduce complexity, mahout for maching learning etc.. But Sparks tries to unify them together under a single stack.
+
+![Spark Download](/img/spark-hadoop.png)
 
 Since the spark-core is general purpose and fast, multiple higher level components can be build top on that specialized for various workloads. The components in spark stack is closely integrated with spark-core so that they can inter-operate closely. This tight integration allows benefits such as improvement in lower layer will get easily utilized to upper layer (Eg: Bug fix/speed optimization in spark-core).Single software system hence easy maintainable and a new component added to spark stack can be easily available with out much effort. 
 
@@ -56,4 +58,11 @@ MLLib as name suggests is spark's library that provides basic machine learning f
 GraphX is a library for manipulating graphs (e.g., a social network’s friend graph) and performing graph-parallel computations. Like Spark Streaming and Spark SQL, GraphX extends the Spark RDD API, allowing us to create a directed graph with arbitrary properties attached to each vertex and edge. GraphX also provides various operators for manipulating graphs (e.g., subgraph and mapVertices) and a library of common graph algorithms (e.g., PageRank and triangle counting).
 
 **Cluster Managers:**
-Under the hood, Spark is designed to efficiently scale up from one to many thousands of compute nodes. To achieve this while maximizing flexibility, Spark can run over a variety of cluster managers, including Hadoop YARN, Apache Mesos, and a simple cluster manager included in Spark itself called the Standalone Scheduler. If you are just installing Spark on an empty set of machines, the Standalone Scheduler provides an easy way to get started; if you already have a Hadoop YARN or Mesos cluster, however, Spark’s support for these cluster managers allows your applications to also run on them. 
+Under the hood, Spark is designed to efficiently scale up from one to many thousands of compute nodes. To achieve this while maximizing flexibility, Spark can run over a variety of cluster managers, including Hadoop YARN, Apache Mesos, and a simple cluster manager included in Spark itself called the Standalone Scheduler. If you are just installing Spark on an empty set of machines, the Standalone Scheduler provides an easy way to get started; if you already have a Hadoop YARN or Mesos cluster, however, Spark’s support for these cluster managers allows your applications to also run on them.
+
+**Lines of Code - Comparison**
+Lesser the code, easy management and optimization. The picture below shows code comparison (As of April-2015) on some of the major big data frameworks. As you can see Spark components are reusing Spark Core and hence any optimization in Core is reflecting on libraries built on top of that.
+
+![Spark Download](/img/code-size.png)
+
+
