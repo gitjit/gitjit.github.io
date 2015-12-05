@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spark : sbt-eclipse setup"
-date:   2015-12-04 7:40:22
+date:   2015-12-03 7:40:22
 categories: Spark
 author : Jithesh Chandrasekharan
 image: 
