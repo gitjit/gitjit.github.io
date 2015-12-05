@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Spark : sbt-eclipse setup"
-date:   2015-12-03 7:40:22
+date:   2015-12-04 7:40:22
 categories: Spark
 author : Jithesh Chandrasekharan
 image: 
 comments: true
-meta: In this post we will set up spark eclipse project using sbt.
+meta: In this post we will set up spark eclipse project using sbt
 ---
 
 In this post we will discuss how to set up a spark application using SBT and Eclipse-IDE for Scala.The application we are writing is a simple WordCounter. SBT is an interactive build tool for Scala just like Maven/Ant.SBT has native support for Scala code compilation , test frame work integration and dependency management using IVY.
 
 Ensure that <a target="_blank" href = "http://www.scala-sbt.org/">SBT</a>, Scala and <a target="_blank" href = "http://scala-ide.org/">Scala-IDE</a> is installed on your system. As a first step create a root folder for your project in your workspace . In my case the project name is Sparks. Then create a build.sbt file in the project root folder and add following entries into it. (The entries might vary based on versions you installed)
 
-{% highlight shell %}
+{% highlight bash %}
 > mkdir Sparks
 > cd Sparks
 > touch build.sbt
@@ -31,13 +31,13 @@ Add eclipse plugin information.
 
 Now run the following command from root folder of your project to create a Scala Project which we can import into Eclipse. This command will generate necessary folder structure for us to use SBT for continuous compilation and packaging.
 
-{% highlight shell %}
+{% highlight bash %}
 jmac:sparks jit$ sbt eclipse
 {% endhighlight %}
 
 Now import the generated project into Eclipse. (File->Import->ExistingProjectIntoWorkSpace). Then add following code for word count application.
 
-{% highlight scala %}
+{% highlight bash %}
 package main
 
 import org.apache.spark.SparkContext
@@ -72,7 +72,7 @@ jmac:sparks jit$ sbt package
 {% endhighlight %}
 
 Now submit the spark job.
-{% highlight shell %}
+{% highlight bash %}
 jmac:sparks jit$ spark-submit --class "main.WordCounter" --master 
 "local[*]" target/scala-2.11/sparks_2.11-0.1.jar
 {% endhighlight %}
