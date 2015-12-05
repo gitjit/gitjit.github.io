@@ -73,7 +73,7 @@ jmac:sparks jit$ sbt package
 
 Now submit the spark job.
 {% highlight bash %}
-jmac:sparks jit$ spark-submit --class "main.WordCounter" --master 
-"local[*]" target/scala-2.11/sparks_2.11-0.1.jar
+jmac:sparks jit$ spark-submit --class "main.WordCounter" 
+--master "local[*]" target/scala-2.11/sparks_2.11-0.1.jar
 {% endhighlight %}
 spark-submit is the command to submit a job. --class specifies the main entry point of the application and --master specifies the master node and in our case its local and * specifies to utilize all available cores.
