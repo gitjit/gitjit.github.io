@@ -1,0 +1,16 @@
+# Site settings
+title: Data-Tricks 
+description: "Companion blog to the lynda.com course, Jekyll for Web Designers. This site is designed to present Jekyll to web designers in a clear, concise way, and provide a resource and reference for those that are new to Jekyll."
+baseurl: "" 
+url: "http://jameswillweb.github.io/jekyll-for-designers" 
+tagline: 
+
+# Build settings
+markdown: kramdown
+kramdown:
+    auto_ids: false
+paginate: 4
+#paginate_path: 'page:num/'
+permalink: :title/
+gems :
+  - jekyll-paginate
