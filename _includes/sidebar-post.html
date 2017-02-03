@@ -1,14 +1,13 @@
     
-    <div class="asidep">
-    <aside>
+    <div>
+    <aside class="asidep">
     <h3>Similar Posts</h3>
 
     <ul class="archives">
     {% for post in site.tags[page.tags.first] %}
     <li>
         {% if post.title != page.title %}
-          <time itemprop="dateCreated" datetime="{{post.date}}">
-                {{ post.date | date: "%b %d, %Y" }}</time> | <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+           <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
                 {{post.title}}</a>  
         {% endif %}
           

@@ -752,7 +752,7 @@ html {
 	background: ghostwhite;
 }
 body {
-	width: 80%;
+	width: 95%;
 	margin: 0 auto;
 }
 .page-header {
@@ -761,7 +761,7 @@ body {
 }
 .posts {
 	float: left;
-	width: 70%;
+	width: 75%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
 	border: 1px solid silver;
@@ -776,6 +776,13 @@ body {
 	
 }
 
+.asidep {
+	float: left;
+	width: 20%;
+	padding-top: 1em;
+	/*max-width: 320px;*/
+	padding-left: 2.5%;
+}
 
 aside {
 	float: left;
