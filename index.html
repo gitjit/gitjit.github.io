@@ -2,7 +2,7 @@
 layout: default
 ---
 <main role="main" class="cf">
-  <article class="posts"> {% for post in paginator.posts limit:4 %}
+  <article class="index"> {% for post in paginator.posts limit:4 %}
     <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
       <header>
         <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
