@@ -764,7 +764,8 @@ body {
 	width: 75%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
-	border: 1px solid silver;
+	/*border: 1px solid silver;*/
+	/*background:lightgray;*/
 	
 }
 
