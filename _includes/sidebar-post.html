@@ -1,0 +1,30 @@
+    
+    <div class="asidep">
+    <aside>
+    <h3>Similar Posts</h3>
+
+    <ul class="archives">
+    {% for post in site.tags[page.tags.first] %}
+    <li>
+        {% if post.title != page.title %}
+          <time itemprop="dateCreated" datetime="{{post.date}}">
+                {{ post.date | date: "%b %d, %Y" }}</time> | <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+                {{post.title}}</a>  
+        {% endif %}
+          
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h3>Refereces</h3>
+
+  <ul class="archives">
+  {% for refer in page.references %}
+     {% assign words = {{refer}} | split: ':' %}
+     <li><a href= {{ words.last }} target="_blank" >{{ words.first }}</a></li>
+  {% endfor %}
+  </ul>
+
+    </aside>
+    </div>
+    

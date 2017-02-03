@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  "C# Network Server"
+title:  "C# Network Server (Multithreaded)"
 date:   2017-01-15
 tags: [C#,Networking]
+references: [
+   "MSDN Socket Examples:https://msdn.microsoft.com/en-us/library/w89fhyex(v=vs.110).aspx",
+   "Async Socket:https://www.youtube.com/watch?v=cG5q4XdYIUI",
+   "C# Chatroom:https://www.youtube.com/watch?v=X66hFZG5p3A "
+]
+
 excerpt: "In this article, we will learn the basics of socket programming in .NET Framework using C#. Secondly, we will create a small application consisting of a server and a client which will communicate using TCP and UDP protocols.Inter-Process Communication i.e. the capability of two or more physically connected machines to exchange data, plays a very important role in enterprise software development."
 ---
 
