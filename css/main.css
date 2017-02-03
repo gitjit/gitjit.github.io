@@ -657,6 +657,14 @@ aside li {
 -----------------------------------------------------*/
 @media only screen and (max-width: 950px) {
 
+html {
+	background: ghostwhite;
+}
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
 .right, .left {
 	float: none;
 }
@@ -744,7 +752,7 @@ html {
 	background: ghostwhite;
 }
 body {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 }
 .page-header {
