@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "C# Network Server (Multithreaded)"
+description: "A multithreaded C# chat application"
 date:   2017-01-15
 tags: [C#,Networking]
 references: [

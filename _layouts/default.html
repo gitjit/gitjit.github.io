@@ -8,6 +8,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+  {% seo %}
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
