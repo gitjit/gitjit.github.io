@@ -3,6 +3,7 @@ layout: post
 title: "Cosine Similarity"
 description: "Cosine Similarity example"
 date: 2017-02-01
+comments: true
 tags: [Python,C#]
 references: [
    "Google:http://www.google.com",
