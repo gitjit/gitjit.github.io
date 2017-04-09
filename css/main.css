@@ -741,6 +741,21 @@ dd{
 	margin-bottom: 1em;
 }
 }
+
+@media (min-width:1281px) 
+
+{ /* hi-res laptops and desktops */
+
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+}
+
+
+
 /* -------------------------------------------------- 
    Larger screen styles
 -----------------------------------------------------*/
