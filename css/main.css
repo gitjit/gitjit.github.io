@@ -542,6 +542,16 @@ dd {
 	padding: 0.125em 0.5em;
 	border-radius: 0.25em;
 }
+
+ .posted-in-a {
+	text-decoration: none;
+	font-size: 0.8em;
+	background: #42659A;
+	color: white;
+	padding: 0.125em 0.5em;
+	border-radius: 0.25em;
+}
+
 .return {
 	display: none;
 }
@@ -564,8 +574,8 @@ aside {
 	padding: 0 0 0; /*jits*/
 	float: left;
 	margin-top: 1em;
-	border:1px solid silver;
-	background: ghostwhite;
+	/*border:1px solid silver;*/
+	background: white;
 	margin-left: 1em;
 
 }
@@ -589,6 +599,17 @@ aside ul {
 aside li {
 	margin-bottom: 0.5em;
 }
+
+/*
+aside a {
+	text-decoration: none;
+	font-size: 0.8em;
+	background: #42659A;
+	color: white;
+	padding: 0.125em 0.5em;
+	border-radius: 0.25em;
+}*/
+
 .social {
 	display: flex;
 	justify-content: space-around;
@@ -764,7 +785,7 @@ body {
 }
 .posts {
 	float: left;
-	width: 99%;
+	width: 70%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
 	/*border: 1px solid silver;*/
@@ -774,7 +795,7 @@ body {
 
 .index,.archive {
 	float: left;
-	width: 100%;
+	width: 70%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
 	
