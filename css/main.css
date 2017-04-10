@@ -785,7 +785,7 @@ body {
 }
 .posts {
 	float: left;
-	width: 75%;
+	width: 70%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
 	/*border: 1px solid silver;*/
@@ -795,7 +795,7 @@ body {
 
 .index,.archive {
 	float: left;
-	width: 75%;
+	width: 70%;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
 	
