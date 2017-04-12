@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Bootstrap Blog Template">
+    <meta name="author" content="Jithesh Chandrasekharan">
+
+    <!-- Bootstrap CSS file -->
+    <link href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="{{ site.baseurl }}/blog.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!--header-->
+    {% include menu.html %}
+    <!--end header-->
+
+    <div id="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 style="color:#000">{{page.title}}</h2>
+                    <div class="row">
+                        <div class="group1 col-sm-6 col-md-6">
+                            <span class="glyphicon glyphicon-bookmark"></span> {% for tag in page.tags %}
+                            <a href="#">{{tag}}</a> {% unless forloop.last %}, {% endunless %}{% endfor %}
+                        </div>
+                        <div class="group2 col-sm-6 col-md-6">
+                            <span class="glyphicon glyphicon-time"></span>
+                            <time itemprop="dateCreated" datetime="{{page.date}}">
+                                {{ page.date | date: "%B %-d, %Y" }}</time>
+                        </div>
+                    </div>
+                    <hr> {{content}}
+
+                </div>
+                <!--sidebar-->
+
+                <div class="col-md-4">
+
+                    {% include sidepost.html %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        {% include footer.html %}
+    </footer>
+
+
+    <!--Java Scripts-->
+    <script src="{{ site.baseurl }}/jquery-3.2.0.min.js"></script>
+    <script src="{{ site.baseurl }}/bootstrap-3.3.7\js\bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!-- Latest Posts -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Similar Posts</h4>
+    </div>
+    <ul class="list-group">
+        {% for post in site.tags[page.tags.first] %}
+
+         {% if post.title != page.title and post.title != blank %}
+        <li class="list-group-item">
+            <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+                {{post.title}}</a> 
+        </li>
+            {% endif %}
+        {% endfor %}
+
+    </ul>
+</div>
+<!--References-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>References</h4>
+    </div>
+    <ul class="list-group">
+         {% for refer in page.references %}
+     {% assign words = {{refer}} | split: ':' %}
+       <li  class="list-group-item"><a href= {{ words.last }} target="_blank" >{{ words.first }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+ <!--Tags-->
+ {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign sortedTags = site_tags | split:',' | sort %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Categories</h4>
+    </div>
+    <ul class="list-group">
+        {% for tag in sortedTags %}
+        <li class="list-group-item"><a href="##{{ tag | cgi_escape }}">{{tag}} ({{ site.tags[tag].size }})</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+ 

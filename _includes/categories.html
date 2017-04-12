@@ -1,0 +1,18 @@
+<!--sidebar-->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign sortedTags = site_tags | split:',' | sort %}
+
+    
+    <!--Tags-->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Categories</h4>
+    </div>
+    <ul class="list-group">
+        {% for tag in sortedTags %}
+        <li class="list-group-item"><a href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}">{{tag}} ({{ site.tags[tag].size }})</a></li>
+        {% endfor %}
+    </ul>
+    
+
+

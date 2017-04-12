@@ -1,0 +1,20 @@
+body{
+    margin-top: 75px;
+}
+
+
+@media (min-width: 768px) { /* tablets and up */
+    .group2 {
+        text-align: right;
+    }
+}
+
+.br-space {
+   display: block;
+   margin-bottom: 50px;
+   visibility: hidden;
+}
+
+#centerdiv{
+    margin: 0 auto;
+} 
