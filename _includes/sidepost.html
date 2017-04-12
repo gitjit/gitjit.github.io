@@ -1,4 +1,6 @@
-<!-- Latest Posts -->
+
+
+<!-- Similar Posts -->
 <div class="panel panel-default">
     <div class="panel-heading">
         <h4>Similar Posts</h4>
@@ -16,6 +18,7 @@
 
     </ul>
 </div>
+
 <!--References-->
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -27,21 +30,8 @@
        <li  class="list-group-item"><a href= {{ words.last }} target="_blank" >{{ words.first }}</a></li>
         {% endfor %}
     </ul>
-</div>
-
- <!--Tags-->
- {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign sortedTags = site_tags | split:',' | sort %}
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h4>Categories</h4>
-    </div>
-    <ul class="list-group">
-        {% for tag in sortedTags %}
-        <li class="list-group-item"><a href="##{{ tag | cgi_escape }}">{{tag}} ({{ site.tags[tag].size }})</a></li>
-        {% endfor %}
-    </ul>
-</div>
-
+</div
+>
+<!--Categories-->
+{% include categories.html %}
  

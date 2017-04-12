@@ -4,3 +4,9 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vs/*
