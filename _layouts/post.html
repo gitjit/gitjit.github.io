@@ -27,29 +27,53 @@
             <div class="row">
                 <div class="col-md-8">
                     <h2 style="color:#000">{{page.title}}</h2>
+
+                    <!--show tags, download, share, date posted-->
+
                     <div class="row">
                         <div class="group1 col-sm-6 col-md-6">
+                            <!--tags-->
                             <span class="glyphicon glyphicon-bookmark"></span> {% for tag in page.tags %}
-                            <a href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}">{{tag}}</a> {% unless forloop.last %}, {% endunless %}{% endfor %}
+                            <a href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}" title = "posted in {{tag}}">{{tag}}</a> {% unless forloop.last
+                            %}, {% endunless %}{% endfor %} 
+                            
+                            <!--code download-->
                             {% if page.source != nil %}
                                 <span style="margin-right:1.25em;"></span>
                                 <span class="glyphicon glyphicon-download-alt"></span>
-                                <a href="{{page.source}}" target="_blank">code</a>
+                                <a href="{{page.source}}" target="_blank" title="download source">code</a> 
                             {% endif %}
-                             
+
+                            <!--share via email-->
+                            <span style="margin-right:1.25em;"></span>
+                            <span style="margin-right:5px; "><a href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ page.url }}"><i class="fa fa-envelope fa share-button"  title="share this post"></i></a></span>
+
+                            <!--share via twitter-->
+                            <span style="margin-right:5px; "><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+                            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+                            <i class="fa fa-twitter fa share-button" title="share this post"></i></a></span>
+
+                            <!--share via linked-in-->
+                            <span style="margin-right:5px; ">
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source=webjeda" onclick="window.open(this.href, 'mywin',
+                            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="share this post"><i class="fa share-linkedin fa-linkedin fa share-button"></i></a> </span>
+                            <span style="margin-right:5px; "></span>
                         </div>
-                       
+
+                        <!--show posted date-->
                         <div class="group2 col-sm-6 col-md-6">
-                             
                             <span class="glyphicon glyphicon-time"></span>
                             <time itemprop="dateCreated" datetime="{{page.date}}">
                                 {{ page.date | date: "%B %-d, %Y" }}</time>
                         </div>
                     </div>
-                    <hr>
-                    {{content}}
-                    {% include comments.html %}
+
+                    <hr> 
                     
+                    {{content}} 
+                    
+                    {% include comments.html %}
+
                 </div>
                 <!--sidebar-->
 
@@ -62,16 +86,17 @@
             </div>
         </div>
     </div>
-    
-     
+
+
     <footer>
         {% include footer.html %}
     </footer>
 
 
-     <!--Google Fonts-->
-     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{site.baseurl}}/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!--prism-syntax-->
     <link href="{{ site.baseurl }}/prism/prism.css" rel="stylesheet" />
