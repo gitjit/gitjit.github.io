@@ -38,7 +38,11 @@
                                 {{ page.date | date: "%B %-d, %Y" }}</time>
                         </div>
                     </div>
-                    <hr> {{content}}
+                    <hr/> 
+> 
+             
+                    
+                    {{content}}
 
                 </div>
                 <!--sidebar-->
@@ -58,9 +62,17 @@
     </footer>
 
 
+     <!--Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!--prism-syntax-->
+    <link href="{{ site.baseurl }}/prism/prism.css" rel="stylesheet" />
+
     <!--Java Scripts-->
     <script src="{{ site.baseurl }}/jquery-3.2.0.min.js"></script>
     <script src="{{ site.baseurl }}/bootstrap-3.3.7\js\bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/prism/prism.js"></script>
 </body>
 
 </html>

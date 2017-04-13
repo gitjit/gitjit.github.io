@@ -24,7 +24,9 @@ port: PORT
 
 ### Testing code..
 
-{% highlight csharp lineos %}
+
+<pre><code class="language-csharp">
+
 public class Server
     {
         Socket _listenSocket;
@@ -72,7 +74,8 @@ public class Server
             }
         }
     }
-{% endhighlight %}
+</code></pre>
+
 
 In this article, we will learn the basics of socket programming in .NET Framework using C#. Secondly, we will create a small application consisting of a server and a client which will communicate using TCP and UDP protocols.Inter-Process Communication i.e. the capability of two or more physically connected machines to exchange data, plays a very important role in enterprise software development. TCP/IP is the most common standard adopted for such communication. Under TCP/IP each machine is identified by a unique 4 byte integer referred to as its IP address (usually formatted as 192.168.0.101).
 

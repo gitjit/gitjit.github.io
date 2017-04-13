@@ -1,5 +1,6 @@
 body{
     margin-top: 75px;
+    body {font: 15px/1.75em 'Open Sans', Helvetica, Arial, sans-serif; color: #666; font-weight: 300;}
 }
 
 
@@ -18,3 +19,49 @@ body{
 #centerdiv{
     margin: 0 auto;
 } 
+
+/*Overriding Bootstrap schemes*/
+
+.panel-default > .panel-heading
+{
+    color: #000; /*white*/
+    background-color: #c43e3e; /*red*/
+    border-color: #872525; /*dark red*/
+}
+
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #f8f8ff;
+    border-radius: 15px;
+    color: #872525;
+    border: 2px solid #ddd;
+}
+
+h3,h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lead {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.hr-shadow {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+.br-small {
+   display: block;
+   margin-bottom: 20px;
+   visibility: hidden;
+}

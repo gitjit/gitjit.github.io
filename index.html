@@ -1,7 +1,7 @@
 --- 
     layout: default
 --- 
-{% for post in paginator.posts limit:3 %}
+{% for post in paginator.posts limit:4 %}
 <article>
     <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title }}</a></h2>
 
@@ -21,18 +21,19 @@
         </div>
     </div>
 
-    <hr>
-
+    <br class="br-small">
     <!--<img src="http://placehold.it/900x300" class="img-responsive">-->
 
-    <br />
+   
 
     <p class="lead">{{post.excerpt | strip_html}}</p>
 
     <p class="text-right">
         <a href="{{site.baseurl}}{{post.url}}" class="text-right"> continue reading... </a>
     </p>
-    <hr>
+
+    <hr class="hr-shadow">
+
 </article>
 {% endfor %}
 
