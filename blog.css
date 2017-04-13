@@ -54,14 +54,39 @@ p{
     line-height: 1.4;
 }
 
+
+/* margin */
+
+.br-small {
+   display: block;
+   margin-bottom: 20px;
+   visibility: hidden;
+}
+
+
+/* hr index */
+
 .hr-shadow {
   height: 10px;
   border: 0;
   box-shadow: 0 10px 10px -10px #8c8c8c inset;
 }
 
-.br-small {
-   display: block;
-   margin-bottom: 20px;
-   visibility: hidden;
+/* hr in about page*/
+
+hr.style-eight {
+  border: 0;
+  border-top: 4px double #8c8c8c;
+  text-align: center;
+  margin: 30 0;
+}
+hr.style-eight:after {
+  content: '\2665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #fff;
+  color: #8c8c8c;
+  font-size: 18px;
 }
