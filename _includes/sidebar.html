@@ -2,13 +2,13 @@
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign sortedTags = site_tags | split:',' | sort %}
 
-
-    <div class="well text-center">
+    <!--rss feed-->
+    <!--<div class="well text-center">
         <p class="lead">
             Don't want to miss updates? Please click the below button!
         </p>
         <button class="btn btn-primary btn-lg">Subscribe to my feed</button>
-    </div>
+    </div>-->
     <!-- Latest Posts -->
     <div class="panel panel-default">
         <div class="panel-heading">
