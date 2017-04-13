@@ -12,7 +12,11 @@ I am Jithesh Chandrasekharan.I am passionate about programming and have been wor
 
 This blog is mainly about my latest experiences or experiments with some technologies, I’m using at work or for fun during my part time . My recent focus in on Big Data and cloud technologies, so expect more posts on that topic. 
 
-My favorite form of communication is Twitter, where you'll find me ranting 140 characters at a time at <span><a href="https://twitter.com/JitheshMenon" target="_blank" title="twitter">@jitheshmenon</a></span>
+Get in touch through <span style="margin-right:5px"><a href="https://twitter.com/gitjit" target="_blank"><i class="fa fa-twitter"></i></a></span> <span style="margin-right:5px"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></span >  <span style="margin-right:5px" ><a href="#" target="_blank"><i class="fa fa-github"></i></a></span>  
+
+<!--My favorite form of communication is Twitter, where you'll find me ranting 140 characters at a time at <span><a href="https://twitter.com/gitjit"><i class="fa fa-twitter"></i></a></span>.
+
+Resume : <span><a href="#"><i class="fa fa-linkedin"></i></a></span>  -->
 
 ### Disclaimer  
 
