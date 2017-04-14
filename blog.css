@@ -90,3 +90,16 @@ hr.style-eight:after {
   color: #8c8c8c;
   font-size: 18px;
 }
+
+/*overide brand*/
+.navbar-brand {
+  line-height:15px;
+  padding-top:20px;
+  padding-bottom:10px;
+}
+
+.navbar-brand small {
+  display:block;
+  font-size:10px;
+  color:#4dc9f6;
+}
