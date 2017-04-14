@@ -1,9 +1,9 @@
 # Site settings
-title: Data-Tricks 
-description: "Companion blog to the lynda.com course, Jekyll for Web Designers. This site is designed to present Jekyll to web designers in a clear, concise way, and provide a resource and reference for those that are new to Jekyll."
+title: PegGin 
+description: "A technology blog by Jithesh Chandrasekharan"
 baseurl: "" 
-url: "http://data-tricks.com" 
-tagline: 
+url: "http://pepgin.com" 
+tagline: "Spice up your coding!"
 
 # Build settings
 markdown: kramdown
