@@ -25,11 +25,16 @@
     <!--<img src="http://placehold.it/900x300" class="img-responsive">-->
 
    
+    <!--post excerpt-->
 
     <p class="lead">{{post.excerpt | strip_html}}</p>
 
+    <!--continue reading-->
+
     <p class="text-right">
-        <a href="{{site.baseurl}}{{post.url}}" class="text-right"> continue reading... </a>
+        <a href="{{site.baseurl}}{{post.url}}" class="text-right" title="continue reading...">
+            <i class="fa fa-arrow-down" aria-hidden="true" ></i>
+         </a>
     </p>
 
     <hr class="hr-shadow">

@@ -1,6 +1,7 @@
 
 
 <!-- Similar Posts -->
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <h4>Similar Posts</h4>
@@ -27,7 +28,10 @@
     <ul class="list-group">
          {% for refer in page.references %}
      {% assign words = {{refer}} | split: ':' %}
-       <li  class="list-group-item"><a href= {{ words.last }} target="_blank" >{{ words.first }}</a></li>
+       <li  class="list-group-item"><a href= {{ words.last }} target="_blank" > 
+           <i class="fa fa-external-link" aria-hidden="true"></i>
+           {{ words.first }}
+           </a></li>
         {% endfor %}
     </ul>
 </div
