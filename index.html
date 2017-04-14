@@ -43,16 +43,17 @@
     {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
     <li class="previous">
         <a href="{{site.baseurl}}/">
-            <-Newer</a>
+            <i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:24px;"></i></a>
     </li>
     {% else %}
     <li class="next">
         <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">
-            <-Newer</a>
+            <i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:24px;"></i></a>
     </li>
     {% endif %} {% endif %} {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Older-></a>
+        <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" title="older posts">
+        <i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size:24px;"></i></a>
     </li>
     {% endif %} </div>
 </ul>
