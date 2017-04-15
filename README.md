@@ -18,3 +18,13 @@ https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/
 
 <http://frontendcollisionblog.com/javascript/jekyll/tutorial/2015/03/26/getting-started-with-a-search-engine-for-your-site-no-server-required.html>
 
+<img src="/images/lang-cli.png" class="img-responsive">
+
+#### Prism.js languages
+
+<pre class="line-numbers" ><code class="language-csharp">
+    stfd int32 Point::Y
+    ldc.i4 0xc8
+</code></pre>
+
+
