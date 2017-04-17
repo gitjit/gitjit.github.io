@@ -6,9 +6,9 @@ date:   2017-04-14
 tags: [C#,.Net]
 comments: true
 references: [
-   "MSDN Socket Examples:https://msdn.microsoft.com/en-us/library/w89fhyex(v=vs.110).aspx",
-   "Async Socket:https://www.youtube.com/watch?v=cG5q4XdYIUI",
-   "C# Chatroom:https://www.youtube.com/watch?v=X66hFZG5p3A "
+   "MSDN:https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx",
+   "C# Corner:http://www.c-sharpcorner.com/article/assembly-in-net/",
+   
 ]
 
 excerpt: "This article gives a brief introduction to .Net framework and its components.
