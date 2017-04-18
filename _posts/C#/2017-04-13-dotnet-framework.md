@@ -2,7 +2,7 @@
 layout: post
 title:  ".Net Framework Essentials"
 description: "A brief introduction to .Net framework and its components"
-date:   2017-04-14
+date:   2011-03-14
 tags: [C#,.Net]
 comments: true
 references: [
