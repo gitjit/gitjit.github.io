@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Site under Construction"
+date: 2017-04-18
+tags: [Python,C#]
+references: [
+   "Jekyll Source :https://github.com/jekyll/jekyll",
+   "Jekyll:https://jekyllrb.com/", 
+]
+
+excerpt: "This site is under construction. I am in process of unifying couple of my blogs into single site using Jekyll and Github pages. I just 
+started the work. Some blog contents are too old and uses some old libraries and I need to port them to use latest libraries. Hope this will be 
+ready in another month or so.. do visit later... "
+---
+
+
+<img src='/images/underconstruction.jpg' class='img-responsive'>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<pre><code class="language-css">p { color: red }</code></pre>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+
+
+
+  
+
