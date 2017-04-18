@@ -2,7 +2,7 @@
 layout: post
 title:  "Python : A simple to do list"
 description: "A simple to do list to undertand file i/o in python"
-date:   2011-05-10
+date:   2011-04-02
 tags: [Python]
 comments: true
 source: "https://github.com/GitJit/python-core/tree/master/apps/07.1-wizard_battle"

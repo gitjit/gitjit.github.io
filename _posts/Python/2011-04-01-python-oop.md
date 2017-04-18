@@ -2,7 +2,7 @@
 layout: post
 title:  "Python : Object oriented programming"
 description: "A python game to learn object oriented programming"
-date:   2011-04-10
+date:   2011-04-01
 tags: [Python]
 comments: true
 source: "https://github.com/GitJit/python-core/tree/master/apps/07.1-wizard_battle"
