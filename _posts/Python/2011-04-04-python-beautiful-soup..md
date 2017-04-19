@@ -5,7 +5,7 @@ description: "A simple weather app to illustrate Beautiful Soup"
 date:   2011-04-04
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/python-core/tree/master/apps/07.1-wizard_battle"
+source: "https://github.com/GitJit/py-kitchen/tree/master/apps/05-weather"
 references: [
    "Beautiful Soup documentation : https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
    "Requests module : http://docs.python-requests.org/en/master/",

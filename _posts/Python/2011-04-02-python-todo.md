@@ -5,7 +5,7 @@ description: "A simple to do list to undertand file i/o in python"
 date:   2011-04-02
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/python-core/tree/master/apps/07.1-wizard_battle"
+source: "https://github.com/GitJit/py-kitchen/tree/master/apps/04-todo"
 references: [
    "Standard library : https://docs.python.org/3/library/index.html",
    "Python programming : https://pythonprogramming.net/",
