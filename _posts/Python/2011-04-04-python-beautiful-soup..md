@@ -13,16 +13,16 @@ references: [
    
 ]
 
-excerpt: "This post is about using `Beautiful` Soup and `requests` module in python application for webscrapping. 
-We are writing a simple weather application that uses Beautiful Soup to scrap the web and uses request module to download
-from web to display weather at a particular zip code. After reading this post you will get a basic idea on 
-how to use `Beautiful Soup` and `requests` module in python."
+excerpt: "This post is about using `BeautifulSoup` and `requests` module in python application for webscrapping. 
+We are writing a simple weather application that uses request module to html page from a website and then uses
+`BeautifulSoup` to scrap the web and to capture weather info at a particular zip code. After reading this post
+you will get a basic idea on how to use `Beautiful Soup` and `requests` module in python."
 ---  
 
-This post is about using `Beautiful` Soup and `requests` module in python application for webscrapping. 
-We are writing a simple weather application that uses Beautiful Soup to scrap the web and uses request module to download
-from web to display weather at a particular zip code. After reading this post you will get a basic idea on 
-how to use `Beautiful Soup` and `requests` module in python.  
+This post is about using `BeautifulSoup` and `requests` module in python application for webscrapping. 
+We are writing a simple weather application that uses request module to html page from a website and then uses
+`BeautifulSoup` to scrap the web and to capture weather info at a particular zip code. After reading this post
+you will get a basic idea on how to use `Beautiful Soup` and `requests` module in python.
 
 Note :_I have recently updated this post to use BS4 and requests_. 
 
@@ -105,6 +105,16 @@ This is how we create a `namedtuple`. It is part of collections module.
 
 <pre class='line-numbers'>
 <code class='language-python'>
+# create a named tuple for returning multiple values
+WeatherReport = collections.namedtuple('WeatherReport', 'location, temperature, scale, cond')
+</code>
+</pre>
+
+Its also important that results might need some clean up. For example city name we got back is 
+having new line character and we need to do some clean up there.
+
+<pre class='line-numbers'>
+<code class='language-python'>
 def clean_text(text: str):
     if not text:
         return text
@@ -116,16 +126,6 @@ def get_city(text: str):
     text = clean_text(text)
     parts = text.split('\n')
     return parts[0]
-</code>
-</pre>
-
-Its also important that results might need some clean up. For example city name we got back is 
-having new line character and we need to do some clean up there.
-
-<pre class='line-numbers'>
-<code class='language-python'>
-# create a named tuple for returning multiple values
-WeatherReport = collections.namedtuple('WeatherReport', 'location, temperature, scale, cond')
 </code>
 </pre>
 
