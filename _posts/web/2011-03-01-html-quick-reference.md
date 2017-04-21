@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "HTML : Quick reference"
-date: 2011-05-01
+title: "HTML/CSS : Quick reference"
+date: 2011-03-01
 tags: [Web]
 references: [
    "Jekyll Source :https://github.com/jekyll/jekyll",
