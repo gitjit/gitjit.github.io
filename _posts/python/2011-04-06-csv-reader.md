@@ -9,7 +9,7 @@ references: [
    "Standard library : https://docs.python.org/3/library/index.html",
    "CSV Reader : https://docs.python.org/3/library/csv.html",
    "Zip Function : https://docs.python.org/3/library/functions.html?highlight=zip#zip",
-   
+
 ]
 
 excerpt: "This post is about writing a CSV reader which generates a dictionary from a csv file.The reader accepts path to csv file 
@@ -25,7 +25,7 @@ the end of this post you will get a good understanding of lists, dictionary and 
 <code class='language-python'>
 import csv
 def read_csv(file, types):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding='utf-8-sig')
         rows = csv.reader(f)
         head = next(rows)
         records = []
@@ -54,9 +54,10 @@ pprint.pprint(records)
 </pre>
 
 Now let us dissect the above code line by line. The function first opens the file and pass the
-stream to `csv.reader()`. The first line is header and its grabbed using `next()`. In order to 
-grab the line number we are using `enumerate()`. We are using line numbers to show meaninful error
-when we fail to convert a type. Before disecting the next line let us understand how `zip() ` works.
+stream to `csv.reader()`. we are using encoding='utf-8-sig' to ignore BOM. The first line is header and
+its grabbed using `next()`. In order to grab the line number we are using `enumerate()`.
+We are using line numbers to show meaninful error when we fail to convert a type. Before disecting the
+ next line let us understand how `zip() ` works.
 
 <pre class='line-numbers'>
 <code class='language-python'>
@@ -132,13 +133,13 @@ for above csv file looks like this.
 
 <pre class='line-numbers'>
 <code class='language-bash'>
-[{'Date': '7/11/2007', 'Price': 32.2, 'Shares': 100, 'ï»¿Name': 'HPQ'},
- {'Date': '7/12/2007', 'Price': 91.9, 'Shares': 50, 'ï»¿Name': 'IBM'},
- {'Date': '7/13/2007', 'Price': 83.44, 'Shares': 150, 'ï»¿Name': 'GE'},
- {'Date': '7/14/2007', 'Price': 51.23, 'Shares': 200, 'ï»¿Name': 'CAT'},
- {'Date': '7/15/2007', 'Price': 40.37, 'Shares': 95, 'ï»¿Name': 'MSFT'},
- {'Date': '7/16/2007', 'Price': 65.1, 'Shares': 50, 'ï»¿Name': 'HPE'},
- {'Date': '7/17/2007', 'Price': 70.44, 'Shares': 100, 'ï»¿Name': 'AFL'}]
+[{'Date': '7/11/2007', 'Name': 'HPQ', 'Price': 32.2, 'Shares': 100},
+ {'Date': '7/12/2007', 'Name': 'IBM', 'Price': 91.9, 'Shares': 50},
+ {'Date': '7/13/2007', 'Name': 'GE', 'Price': 83.44, 'Shares': 150},
+ {'Date': '7/14/2007', 'Name': 'CAT', 'Price': 51.23, 'Shares': 200},
+ {'Date': '7/15/2007', 'Name': 'MSFT', 'Price': 40.37, 'Shares': 95},
+ {'Date': '7/16/2007', 'Name': 'HPE', 'Price': 65.1, 'Shares': 50},
+ {'Date': '7/17/2007', 'Name': 'AFL', 'Price': 70.44, 'Shares': 100}]
 </code>
 </pre>
 
