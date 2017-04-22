@@ -117,7 +117,7 @@ This is an important step to be taken when creating packages. Another advantage 
 it is not tied to the package name. So even if package name changed it should work well. ! Now let us
 dwell into another file we created `__init__.py`.  
 
-`__init__.py' is called as package initializer and it gets executed before loading any modules in the 
+`__init__.py` is called as package initializer and it gets executed before loading any modules in the 
 package. So we can use `__init__.py` to do some initialization before any other modules in package
 gets loaded. It is widely used to lift symbols from submodules up a level and abstract the implementation
 details. So in our `__init__.py` let us lift symbols in modules in package as follows.  
