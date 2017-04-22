@@ -5,7 +5,7 @@ description: "Creating a package for python modules"
 date:   2011-04-08
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/py-kitchen/tree/master/apps/11-stock-calc"
+source: "https://github.com/GitJit/py-kitchen/tree/master/apps/stocker"
 references: [
   "Standard library : https://docs.python.org/3/library/index.html",
    "Davide Beazly Pycon : https://www.youtube.com/watch?v=0oTh1CXRaQ0&t=6080s",
