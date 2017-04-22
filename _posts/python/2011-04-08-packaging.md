@@ -1,16 +1,14 @@
 ---
 layout: post
 title:  "Python : Packaging"
-description: "Generating a dictionary from CSV"
+description: "Creating a package for python modules"
 date:   2011-04-08
 tags: [Python]
 comments: true
 source: "https://github.com/GitJit/py-kitchen/tree/master/apps/11-stock-calc"
 references: [
   "Standard library : https://docs.python.org/3/library/index.html",
-   "CSV Reader : https://docs.python.org/3/library/csv.html",
-   "Zip Function : https://docs.python.org/3/library/functions.html?highlight=zip#zip",
-   "Iter Tools : https://docs.python.org/3/library/itertools.html",
+   "Davide Beazly Pycon : https://www.youtube.com/watch?v=0oTh1CXRaQ0&t=6080s",
 ]
 
 excerpt: "This post explains how python packaging works and shows how simple it is organise modules
