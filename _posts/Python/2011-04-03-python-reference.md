@@ -16,3 +16,4 @@ excerpt: "This is my Python quick reference page. This page contains quick refer
 contents like new sytax, third party packages, code snippets when I encounter something new !"
 ---
 
+Brandon Rhodes : [All Your Ducks In A Row: Data Structures in the Standard Library and Beyond](https://youtu.be/fYlnfvKVDoM)
