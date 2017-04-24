@@ -5,6 +5,8 @@ date: 2015-03-02
 tags: [Javascript]
 references: [
    "w3schools : https://www.w3schools.com/js/",
+   "mdn: https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+   
 ]
 
 excerpt: "This post is about some Javascript basics. It covers some basics about Object, Object Methods and DOM in
@@ -176,6 +178,148 @@ var amzlink = h3header.querySelector("a");
 amzlink.getAttribute("href");
 amzlink.setAttribute("href","http://www.google.com");
 amzlink.textContent="Google";
+
+```
+### Events  
+
+Now let us discuss how to handle events in  Javascript.As a first step, let us create a basic html page and associate a Javascript with it.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+       
+       <h1>Hover me !</h1>
+       <h2>Click me !</h2>
+       <h3>Double Click me !</h3>
+    
+    </body>
+    <script src="event.js">
+        
+    </script>
+</html>
+
+```  
+Now let us add the Javascript which handles hover, out , click and dblclick.  
+
+```javascript
+h1header = document.querySelector("h1")
+h2header = document.querySelector("h2")
+h3header = document.querySelector("h3")
+
+h1header.addEventListener("mouseover", function(){
+    h1header.textContent = "Hovered success !";
+    h1header.style.color = "green";
+});
+
+h1header.addEventListener("mouseout", function(){
+    h1header.textContent = "Hover me !";
+    h1header.style.color = "black";
+});
+
+h2header.addEventListener("click", function(){
+    h2header.textContent = "Clicked !";
+});
+
+h3header.addEventListener("dblclick", function(){
+    h3header.textContent = "Double Clicked !";
+});
+
+```
+
+### Tic Tac Toe Board  
+
+Let us solidify our understanding on events by creating a simple Tic Tac Toe board. We are not developing the game, but just the UI.  
+
+<img src='/images/2017-04-23-16-28-36.png' class='img-responsive'>  
+
+We will be using bootstrap to create the Jumbotron and will be using basic html table and plain css to create the board. The event handling
+is done in Javascript.  
+
+```html
+//tictactoe.html
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Tic Tac Toe</h1>
+            <p>A simple Tic Tac Toe Game</p>
+            <p><a class="btn btn-primary btn-lg" href="#" 
+             role="button">Refresh</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td id="1.1"></td>
+                <td id="1.2"></td>
+                <td id="1.3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+
+```
+Now apply border and size of table cells.
+
+```css
+//style.css 
+td{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 100px;
+    text-decoration: None;
+    user-select:none;
+}
+
+table{
+    margin: auto;
+}
+
+```  
+Now handle the click event (X) and double click(O) event.  
+
+```javascript
+
+//tictac.js
+
+btn = document.querySelector(".btn")
+btn.setAttribute("href", document.URL);
+btn.addEventListener("click",function(){
+    alert(document.URL);
+} );
+
+console.log("connected to js ");
+tdElements = document.querySelectorAll("td");
+for (tdElement of tdElements) {
+    tdElement.addEventListener("click", function () {
+        this.innerHTML = "<strong>X<strong>";
+    });
+
+    tdElement.addEventListener("dblclick", function () {
+        this.innerHTML = "<strong>O<strong>"
+    });
+
+}
 
 ```
 
