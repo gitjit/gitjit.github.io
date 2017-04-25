@@ -2,7 +2,7 @@
 layout: post
 title: "Bootstrap : Fundamentals"
 date: 2015-03-01
-tags: [Web]
+tags: [Bootstrap, Web]
 source: "https://github.com/GitJit/web-kitchen/tree/master/bootstrap/koffee-site"
 references: [
    "Bootstrap grid system:http://getbootstrap.com/css/#grid",

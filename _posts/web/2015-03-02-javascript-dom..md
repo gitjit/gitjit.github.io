@@ -2,7 +2,7 @@
 layout: post
 title: "Javascript : Objects and  Dom"
 date: 2015-03-02
-tags: [Javascript]
+tags: [Javascript,Web]
 references: [
    "w3schools : https://www.w3schools.com/js/",
    "mdn: https://developer.mozilla.org/en-US/docs/Web/JavaScript",

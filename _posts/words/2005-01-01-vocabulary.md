@@ -26,6 +26,23 @@ _A large number_
 
 > "Daniel regularly receives a `slew` of clothing catalog as part of his junk mail."  
 
+<hr/>
+
+ **ragamuffin**  
+ 
+ _A poorly clothed often dirty child, A ragged often disreputable person_
+ 
+ > While walking our of airport, Bradley was surrounded by `ragamuffins` underfoot offering to
+ hold his luggage in exchange for a small donation.  
+
+ **rescind**
+
+_Take away, remove, to take back_  
+
+> Following a hearing from Atomic Energy Commission in 1954, Oppenheimer's security clearance was rescinded.
+
+
+
 
 
 
