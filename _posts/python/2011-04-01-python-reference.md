@@ -2,7 +2,7 @@
 layout: post
 title:  "Python quick reference"
 description: "Python snippets for reference while coding"
-date:   2011-04-03
+date:   2011-04-01
 tags: [Python]
 comments: true
 references: [
