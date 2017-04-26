@@ -2,7 +2,7 @@
 layout: post
 title: "Site under Construction"
 date: 2017-04-18
-tags: [Python,C#]
+
 references: [
    "Jekyll Source :https://github.com/jekyll/jekyll",
    "Jekyll:https://jekyllrb.com/", 
