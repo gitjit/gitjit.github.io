@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python : Getattr"
+title:  "Python : Object Oriented Programming (Getattr)"
 description: "A simple use case of GetAttribute method in objects"
 date:   2011-04-10
 tags: [Python]

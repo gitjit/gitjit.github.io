@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python : Object oriented programming"
+title:  "Python : Object oriented programming (Basics)"
 description: "A python game to learn object oriented programming"
 date:   2011-04-09
 tags: [Python]
