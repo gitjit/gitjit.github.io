@@ -35,6 +35,12 @@ class B(Parent):
         print ('B fun')
         super().fun()
 
+```
+
+So here we have a parent class and we are deriving class A and B from the Parent. Then we are using `super()` to 
+call the base class method from sub class.  
+
+```python
 p = Parent()
 a = A()
 b = B()
@@ -53,8 +59,6 @@ B fun
 Parent fun!
 
 ```
-So here we have a parent class and we are deriving class A and B from the Parent. Then we are using `super()` to 
-call the base class method from sub class.  
 Now let us consider the scenaio of multiple inheritance as shown below. Here we are deriving C from A and B.
 
 ```python
@@ -103,6 +107,8 @@ outputs..
 `(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.Parent'>, <class 'object'>)`
 
 Now as expected the resoultion order is reversed with class B before A and parent. 
+
+#### Example : TableFormatter
 
 Now let us write a concrete example to solidify our inheritance understanding. Here we want to create a method `print_table`
 which prints tabular data of collection passed to it. In this example we will be making the collection
