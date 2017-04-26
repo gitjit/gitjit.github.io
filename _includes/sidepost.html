@@ -7,7 +7,7 @@
         <h4>Similar Posts</h4>
     </div>
     <ul class="list-group">
-        {% for post in site.tags[page.tags.first] %}
+        {% for post in site.tags[page.tags.first] limit:5 %}
 
          {% if post.title != page.title and post.title != blank %}
         <li class="list-group-item">

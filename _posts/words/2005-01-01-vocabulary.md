@@ -41,8 +41,18 @@ _Take away, remove, to take back_
 
 > Following a hearing from Atomic Energy Commission in 1954, Oppenheimer's security clearance was rescinded.
 
+**ideate**  
 
+_To form an idea or conception of _
 
+>John first ideated his vision of water garden for his backyard after he went on a sightseeing tour of water
+fountains in Kansas city. 
+
+**svelte**  
+
+_A person of slender and elegant_
+
+> She looks svelte in her new dress.
 
 
 
