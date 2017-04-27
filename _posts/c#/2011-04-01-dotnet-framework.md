@@ -2,8 +2,8 @@
 layout: post
 title:  ".Net Framework Essentials"
 description: "A brief introduction to .Net framework and its components"
-date:   2011-03-14
-tags: [C#,.Net]
+date:   2011-04-01
+tags: [.Net,C#]
 comments: true
 references: [
    "MSDN:https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx",
