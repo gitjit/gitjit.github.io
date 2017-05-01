@@ -32,7 +32,7 @@ _A large number_
  
  _A poorly clothed often dirty child, A ragged often disreputable person_
  
- > While walking our of airport, Bradley was surrounded by `ragamuffins` underfoot offering to
+ > While walking out of airport, Bradley was surrounded by `ragamuffins` underfoot offering to
  hold his luggage in exchange for a small donation.  
 
  **rescind**
@@ -54,6 +54,17 @@ _A person of slender and elegant_
 
 > She looks svelte in her new dress.
 
+**accolade**
+
+_Award, Expression of praise_
+
+> The movies special effect have drawn `accolades` from both fans and critics
+
+**Connoisseur**
+
+_Critical judge in matters of art or taste._
+
+> Professor Trump is a `connoisseur` of African ceremonial masks.
 
 
 

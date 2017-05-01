@@ -128,7 +128,7 @@ AFL,7/17/2007,100,70.44
 </code>
 </pre>
 
-So as a first step let us create a collection from this data. Let Holding be the class corresponding to one row in
+So as a first step let us create a collection from this data. Let `Holding` be the class corresponding to one row in
 the data. 
 
 ```python
