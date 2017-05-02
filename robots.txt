@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: www.pepgin.com/sitemap.xml
+Sitemap: www.jmedium.com/sitemap.xml
