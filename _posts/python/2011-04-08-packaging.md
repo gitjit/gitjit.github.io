@@ -26,7 +26,7 @@ works in Python.
 Any file with extension `.py` is a module and any folder that contains multiple modules is called a 
 python package.  
 
-In our previous [post](http://pepgin.com/csv-data-analysis/) we created two handy modules (`csvreader.py and portfolio.py`)
+In our previous [post](http://jmedium.com/csv-data-analysis/) we created two handy modules (`csvreader.py and portfolio.py`)
 which can be packaged for reuse. With out packaging and using it as a top level module is a risk on bigger projects as it can create
 name conflicts. So let us make these modules as part of a package called "stocker".
 

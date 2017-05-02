@@ -21,7 +21,7 @@ comprehensions.
 
 In this post we will be doing some simple data analysis from CSV files using core-python API's. We will not be
 using any data libraries. This will give us a chance to excercise some of the core python features like sorting, groupby and
-comprehensions. This post is an extension to my previous post[ generating dictionary from CSV](http://pepgin.com/csv-reader/).  
+comprehensions. This post is an extension to my previous post[ generating dictionary from CSV](http://jmedium.com/csv-reader/).  
 
 What is the data we are analysing ?   
 

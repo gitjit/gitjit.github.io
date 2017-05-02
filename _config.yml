@@ -1,8 +1,8 @@
 # Site settings
-title: PegGin 
+title: JMedium 
 description: "A technology blog by Jithesh Chandrasekharan"
 baseurl: "" 
-url: "http://pepgin.com" 
+url: "http://jmedium.com" 
 tagline: "Spice up your coding!"
 
 # Build settings
