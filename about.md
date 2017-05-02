@@ -11,10 +11,9 @@ title: About
 My name is Jithesh Chandrasekharan.I am passionate about programming and have been working as a Software Engineer/Architect for more than a decade now.
 I love what I do and hope you find this blog useful.  
 
-JMedim(Jithesh's medium) is a programming journal, where I documents my experiments with technologies, I’m using at work or for fun during my part time .
+**JMedium** (Jithesh's medium) is a programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
 
 My recent focus in on data and cloud technologies, so expect more posts on that topic.     
-
 
 <!--My favorite form of communication is Twitter, where you'll find me ranting 140 characters at a time at <span><a href="https://twitter.com/gitjit"><i class="fa fa-twitter"></i></a></span>.
 
