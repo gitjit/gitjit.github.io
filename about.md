@@ -24,7 +24,7 @@ Resume : <span><a href="#"><i class="fa fa-linkedin"></i></a></span>  -->
 <div style="text-align: center">
   
  <span style="margin-right:5px; "><a href="mailto:jitheshc@gmail.com?subject=Mail from Data-Tricks.com contact"><i class="fa fa-envelope fa share-button" style="font-size:36px;"></i></a></span>
- <span style="margin-right:5px; "><a href="https://twitter.com/@jithchan" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></span> <span style="margin-right:5px"><a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></span >  <span style="margin-right:5px" ><a href="#" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a></span> 
+ <span style="margin-right:5px; "><a href="https://twitter.com/jithchan" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></span> <span style="margin-right:5px"><a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></span >  <span style="margin-right:5px" ><a href="#" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a></span> 
 </div>
 
 
