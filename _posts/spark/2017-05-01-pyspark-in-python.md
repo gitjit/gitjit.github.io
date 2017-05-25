@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pyspark and Jupyter notebook set up in Ubuntu"
+title:  "Pyspark and Jupyter notebook setup in Ubuntu"
 description: "Setting up pyspark in Ubuntu linux"
 date:   2017-05-01
 tags: [Spark]
