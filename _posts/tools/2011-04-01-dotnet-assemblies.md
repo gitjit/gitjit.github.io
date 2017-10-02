@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Hacks"
+title:  "Hacks/Tools"
 description: "Some common hacks or tools useful for development."
-date:   2017-02-01
-tags: [.Net,C#]
+date:   2017-10-01
+tags: [Hacks/Tools]
 comments: true
 references: [
-   "MSDN:https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx",
-   "C# Corner:http://www.c-sharpcorner.com/article/assembly-in-net/",
+   "https://stackoverflow.com/questions/4895966/changing-default-startup-directory-for-command-prompt-in-windows-7",
    
 ]
 
