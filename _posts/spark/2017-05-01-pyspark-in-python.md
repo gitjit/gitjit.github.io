@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mapreduce : Movie recommendation"
-description: "Setting up pyspark in Ubuntu linux"
+description: "Movie recommendation using mapreduce"
 date:   2017-05-01
 tags: [Hadoop,Data-Science]
 comments: true
