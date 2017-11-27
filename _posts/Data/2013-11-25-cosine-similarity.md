@@ -20,9 +20,11 @@ A simple example of Cosine Similarity can be explained using document comparison
 document1  5    0      3       0        2      0      0    2    0    0
 document2  3    0      2       0        1      1      0    1    0    1</pre> 
 
-![](../../images/2017-11-26-20-39-18.png)  
+<img src='/images/2017-11-26-20-39-18.png' class='img-responsive'>
+
 So let us apply the same formula in the above vectors.
-![](../../images/2017-11-26-20-39-52.png)  
+<img src='/images/2017-11-26-20-39-52.png' class='img-responsive'>
+
 So a  cosine similarity of ~ 1 represents that the vectors are pointing in the same direction and very similar.  
 
 <strong>Python Implementation
