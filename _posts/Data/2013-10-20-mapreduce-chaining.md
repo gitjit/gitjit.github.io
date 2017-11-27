@@ -3,13 +3,14 @@ layout: post
 title: "MapReduce : Chaining"
 description: "Mapreduce chaining where output of reducer will be input of another mapper."
 date:   2013-10-20
-tags: [Hadoop,DataScience]
+tags: [Hadoop]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
    
 ]
----
+---  
+
 In this post I will be explaining how  to add chaining in your map reduce job. That is output of  reducer will be chained as an input to another mapper in same job.  As an example to explain this I will be improving our regular word count program. In word count program we will get the output as a word and how many occurances of that word in input book.  But if we could sort that output based on count, we can easily predict what this books is all about.  So let's get started.<!--more-->
 
 I am using python's MRJob package for writing the map reduce job. If you have a python environment already installed in your machine, you just need to use this command to install MRJob package.
