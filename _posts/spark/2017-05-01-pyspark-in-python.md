@@ -1,18 +1,14 @@
 ---
 layout: post
-title:  "Pyspark and Jupyter notebook setup in Ubuntu"
+title:  "Mapreduce : Movie recommendation"
 description: "Setting up pyspark in Ubuntu linux"
 date:   2017-05-01
-tags: [Spark]
+tags: [Hadoop,Data-Science]
 comments: true
 references: [
-   "Apache Spark : https://spark.apache.org/",
-   "Apache Spark Documentation: https://spark.apache.org/docs/latest/",
+   "Map Reduce : https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html,
 ]
 
-excerpt: "This post is about setting up pyspark in Ubuntu Linux. For python programmers interested in doing data engineering, pyspark is a very good option.
-We will also set up Jupyter notebook, which enables us to use notebooks to write Spark programs."
----
 
 As a first step ensure that Python3 is installed in Ubuntu. By default latest version of Ubuntu comes with Python2 and Python3 versions. 
 
