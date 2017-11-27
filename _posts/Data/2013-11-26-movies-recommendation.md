@@ -4,7 +4,7 @@ title: "MapReduce and Cosine Similarity : Movie Recommendation"
 description: "A simple movie recommendation program using mapreduce principles"
 date:   2013-11-26
 tags: [Hadoop,DataScience]
-comments: true
+comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
    "Cosine Similarity : https://www.youtube.com/watch?v=C-JauEnlSlM",
@@ -377,3 +377,4 @@ The above mapper and reducers are quite straight forward. The mapper basically t
 <https://www.youtube.com/watch?v=-gz1qdsM0tk>
 
 <http://www.coranac.com/tonc/text/matrix.htm>
+
