@@ -10,6 +10,7 @@ references: [
    "Cosine Similarity : https://www.youtube.com/watch?v=C-JauEnlSlM",
    
 ]
+---
 
 In this post we will be writing a map reduce program to recommend movies based on user ratings.  We will be using movie-lens data to generate recommendation. So goal here is to read the movies lens (u.data) and for each movies give recommended movies or similar movies to watch based on their ratings. (For example Is movie '<strong>12 Angry Men</strong>' similar to '<strong>Real Genius</strong>' ?) Let's get started.<!--more-->
 
