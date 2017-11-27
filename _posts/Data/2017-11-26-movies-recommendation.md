@@ -1,20 +1,15 @@
 ---
 layout: post
-title:  "Movie Comparison"
-description: "Python snippets for reference while coding"
+title: "MapReduce and Cosine Similarity : Movie Recommendation"
+description: "A simple movie recommendation program using mapreduce principles"
 date:   2017-11-26
 tags: [Hadoop,DataScience]
 comments: true
 references: [
-   "Standard library : https://docs.python.org/3/library/index.html",
-   "Python programming : https://pythonprogramming.net/",
-   "Automate boring stuff : https://automatetheboringstuff.com/",
+   "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
+   "Cosine Similarity : https://www.youtube.com/watch?v=C-JauEnlSlM",
    
 ]
-
-excerpt: "This is my Python quick reference page. This page contains quick reference guides that can be handy during development. This page will be constantly updated with
-contents like new sytax, third party packages, code snippets when I encounter something new !"
----
 
 In this post we will be writing a map reduce program to recommend movies based on user ratings.  We will be using movie-lens data to generate recommendation. So goal here is to read the movies lens (u.data) and for each movies give recommended movies or similar movies to watch based on their ratings. (For example Is movie '<strong>12 Angry Men</strong>' similar to '<strong>Real Genius</strong>' ?) Let's get started.<!--more-->
 
