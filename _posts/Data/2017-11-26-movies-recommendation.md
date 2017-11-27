@@ -372,8 +372,8 @@ The above mapper and reducers are quite straight forward. The mapper basically t
 "12 Angry Men (1957)"	["2 Days in the Valley (1996)[0.980690205055][19]", "20,000 Leagues Under the Sea (1954)[0.969262700083][31]", "2001: A Space Odyssey (1968)[0.961979520346][80]", "39 Steps, The (1935)[0.985356481053][33]", "8 1/2 (1963)[0.965109927934][16]", "Absolute Power (1997)[0.965609099171][20]", "Abyss, The (1989)[0.960858720531][39]", "Adventures of Priscilla, Queen of the Desert, The (1994)[0.965537900456][36]", "Adventures of Robin Hood, The (1938)[0.980349115821][36]", "Affair to Remember, An (1957)[0.986687449779][14]", "African Queen, The (1951)[0.979551527392][59]", "Age of Innocence, The (1993)[0.971844896213][24]", "Air Force One (1997)[0.952529271901][44]", "Akira (1988)[0.960859221641][18]", "Aladdin (1992)[0.955029304991][59]", "Alien (1979)[0.974849484133][78]", "Aliens (1986)[0.963869612761][74]", "All About Eve (1950)[0.980280105642][30]", "Amadeus (1984)[0.977913534905][88]", "American in Paris, An (1951)[0.987774556665][24]", "American Werewolf in London, An (1981)[0.958420884414][30]", "Amistad (1997)[0.955297288929][14]", "Annie Hall (1977)[0.956971556552][65]", "Antonia's Line (1995)[0.975082150877][12]", "Apartment, The (1960)[0.96347130036][35]", "Apocalypse Now (1979)[0.9664281618][77]", "Apollo 13 (1995)[0.967469639061][78]", "Apt Pupil (1998)[0.962988181998][19]", "Army of Darkness (1993)[0.959863561746][33]", "Around the World in 80 Days (1956)[0.95649560904][31]", "Arsenic and Old Lace (1944)[0.978000540456][47]", "As Good As It Gets (1997)[0.974938596654][16]",</pre>
 <strong>References:</strong>
 
-https://www.youtube.com/watch?v=C-JauEnlSlM
+<https://www.youtube.com/watch?v=C-JauEnlSlM>
 
-https://www.youtube.com/watch?v=-gz1qdsM0tk
+<https://www.youtube.com/watch?v=-gz1qdsM0tk>
 
-http://www.coranac.com/tonc/text/matrix.htm
+<http://www.coranac.com/tonc/text/matrix.htm>
