@@ -4,7 +4,7 @@ title: "Cosine Similarity : Simple Example"
 description: "Cosine Similarity through simple example"
 date:   2013-11-25
 tags: [Hadoop,DataScience]
-comments: true
+comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
    "Cosine Similarity : https://www.youtube.com/watch?v=C-JauEnlSlM",

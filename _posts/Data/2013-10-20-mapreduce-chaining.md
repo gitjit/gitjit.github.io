@@ -2,7 +2,7 @@
 layout: post
 title: "MapReduce : Chaining"
 description: "Mapreduce chaining where output of reducer will be input of another mapper."
-date:   2013-10-21
+date:   2013-10-20
 tags: [Hadoop,DataScience]
 comments: false
 references: [
@@ -10,84 +10,56 @@ references: [
    
 ]
 ---
+In this post I will be explaining how  to add chaining in your map reduce job. That is output of  reducer will be chained as an input to another mapper in same job.  As an example to explain this I will be improving our regular word count program. In word count program we will get the output as a word and how many occurances of that word in input book.  But if we could sort that output based on count, we can easily predict what this books is all about.  So let's get started.<!--more-->
 
-In an earlier post, we discussed passing additional parameters to MapReduce Job. But there are cases in which we will have to pass some additional files during MapReduce. But since MapReduce runs in multiple nodes, we need to ensure that this additional file that mapper/reducer refers is in that particular node in which its running.  In this post we will disucss how to handle this. Let us say we need to find most popular movie from movie-lens database. If you download movie-lens data, there are 2 files in which we are interested in .  (u.data and u.item). The format of file is as shown here..<!--more-->  
-
-<pre class="lang:default decode:true">u.data
-userid  movieid rating  timestamp 
-196	242	3	881250949
-186	302	3	891717742
-22	377	1	878887116
-244	51	2	880606923
-166	346	1	886397596
-
-u.item
-movieID  Name Release Date  URL
-1|Toy Story (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?|...
-2|GoldenEye (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact|..
-3|Four Rooms (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?|...
-4|Get Shorty (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?|..
-</pre>
+I am using python's MRJob package for writing the map reduce job. If you have a python environment already installed in your machine, you just need to use this command to install MRJob package.
+<pre class="lang:default decode:true ">&gt;&gt; pip install mrjob</pre>
 <strong>Implementation:
 </strong>
 <pre class="lang:python decode:true">from mrjob.job import MRJob
 from mrjob.step import MRStep
-
-'''
-    Goal is to calculate most popular movie from the movie lens data 
-    Algorithm :  Most watched movie is most popular movie
-    Also pass u.item file along with job, so that it will be available in    each nodes, so we can map movieID to a moviename
-'''
-
-class MRMostPopularMovieName(MRJob):
+import re
 
 
-    def configure_options(self):
-        super(MRMostPopularMovieName, self).configure_options()
-        self.add_file_option('--items', help='path to u.item') 
+#wc_regex = re.compile(r"['\w']+")
+wc_regex = re.compile(r"\w+")
 
+class MRWord_freq_count(MRJob):
 
+    def mapper_get_words(self, key, line):
+
+        words = wc_regex.findall(line)
+        for word in words:
+            yield word.lower(), 1
+
+    def reducer_count_words(self, word, values):
+        ''' sum up count of each words'''
+        yield word, sum(values)
+
+    def mapper_count_keys(self, word, count):
+        yield '%04d'%int(count), word
+
+    def reducer_output_words(self, count, words):
+        for word in words:
+            yield count, word 
 
     def steps(self):
-        return [
-                     MRStep(mapper = self.mapper_get_count,
-                            reducer_init = self.reducer_init,
-                            reducer = self.reducer_sum_count),
-
-                     MRStep( reducer = self.reducer_max_count)
-
-               ]
-
-
-    def mapper_get_count(self, _ , line):
-        userId, movieID, rating, timeStamp = line.split('\t')
-        yield movieID, 1
-
-
-    def reducer_init(self):
-        self.movie_names = {}
-
-        with open("u.item") as f:
-            for line in f:
-                fields = line.split('|')
-                self.movie_names[fields[0]] = fields[1]
-
-    
-    def reducer_sum_count(self, movieID, values):
-        yield None , (sum(values), self.movie_names[movieID])
-        
-
-    def reducer_max_count(self, _ , views):
-        yield max(views)
-
+        return  [
+            MRStep(mapper = self.mapper_get_words, 
+                   reducer = self.reducer_count_words),
+            MRStep(mapper = self.mapper_count_keys, 
+                   reducer = self.reducer_output_words)
+            ]
 
 if __name__ == '__main__':
-    MRMostPopularMovieName.run()</pre>
-<pre class="lang:default decode:true">&gt;&gt; python most_popular_movie_name.py --items data\ml-100k\u.item data\ml-100k\u.data</pre>
-<strong>Configure Options
-</strong>In the function configure_option  we have used add file option to specify that a file will be passed along with this MapReduce Job and should be copied to each node.  We have also mentioned that the file will be identified by --items in the command line arg along with the actual data file.
+    MRWord_freq_count.run()</pre>
+<strong>What's happening?
+</strong>A job is defined by a class that inherits from <a class="reference internal" title="mrjob.job.MRJob" href="http://mrjob.readthedocs.org/en/latest/job.html#mrjob.job.MRJob"><code class="xref py py-class docutils literal"><span class="pre">MRJob</span></code></a>. This class contains methods that define the <a class="reference internal" href="http://mrjob.readthedocs.org/en/latest/glossary.html#term-step"><span class="xref std std-term">steps</span></a>of your job.
+A “step” consists of a mapper, a combiner, and a reducer. All of those are optional, though you must have at least one. So you could have a step that’s just a mapper, or just a combiner and a reducer.
+When you only have one step, all you have to do is write methods called <a class="reference internal" title="mrjob.job.MRJob.mapper" href="http://mrjob.readthedocs.org/en/latest/job.html#mrjob.job.MRJob.mapper"><code class="xref py py-meth docutils literal"><span class="pre">mapper()</span></code></a>, <a class="reference internal" title="mrjob.job.MRJob.combiner" href="http://mrjob.readthedocs.org/en/latest/job.html#mrjob.job.MRJob.combiner"><code class="xref py py-meth docutils literal"><span class="pre">combiner()</span></code></a>, and<a class="reference internal" title="mrjob.job.MRJob.reducer" href="http://mrjob.readthedocs.org/en/latest/job.html#mrjob.job.MRJob.reducer"><code class="xref py py-meth docutils literal"><span class="pre">reducer()</span></code></a>.
+The <code class="xref py py-func docutils literal"><span class="pre">mapper()</span></code> method takes a key and a value as args (in this case, the key is ignored and a single line of text input is the value) and yields as many key-value pairs as it likes. The <a class="reference external" title="(in Python v2.7)" href="http://docs.python.org/2/library/functions.html#reduce"><code class="xref py py-func docutils literal"><span class="pre">reduce()</span></code></a> method takes a key and an iterator of values and also yields as many key-value pairs as it likes. (In this case, it sums the values for each key, which represent the numbers of characters, words, and lines in the input.)
 
-<strong>MRJob Step
-</strong>We have also specified some additional steps including a reducer_init which will get called before the reducer in that step gets called. In reducer_init, we create a dictionary of movie names from u.item file which will be present in the same node where mapper/reducer is running.
-
-Another important thing to note in this example is that reducer is passing 'None' as key and a tuple of  sum(views) and movie_name  <strong>(sum(values), self.movie_names[movieID])</strong> as value. This  will help us to calculate the max(views) in the next reducer, which will produce a single result. 
+In this particular example, I have added a new mapper, which takes the output from reducer and generate a key,value pair such that it interchanges the key/value  it recieves such that the count is converted to string (for better sorting) and make it the key and word as the value.
+So here we are using default sorting mechanism of map reduce frame work, so the next reducer will get input sorted based on frequency rather than word. So from the reducer output which is sorted based on frequency, its easy to understand which is the most frequently used  meaningful word in this book. This word gives us more insight on what this book is about.
+<pre class="lang:default decode:true">&gt;&gt; python wc_freq_counter.py book.txt &gt;&gt; out.txt</pre>
+It is important to not that if your job is targetting multiple nodes , then sorting will happen only for the results in that particular node.
