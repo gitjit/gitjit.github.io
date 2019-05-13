@@ -2,7 +2,7 @@
 layout: post
 title:  "MSSql Linux Container"
 description: "Setting up MSSql linux container on Mac"
-date:   2019-05-12
+date:   2019-05-13
 tags: [.Net,Docker]
 comments: false
 references: [
