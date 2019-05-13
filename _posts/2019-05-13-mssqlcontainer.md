@@ -6,7 +6,8 @@ date:   2019-05-12
 tags: [.Net,Docker]
 comments: false
 references: [
-   https://github.com/Microsoft/mssql-docker/issues/315,
+   "https://github.com/Microsoft/mssql-docker/issues/315",
+   "https://hub.docker.com",
 ]
 
 excerpt: "This article shows step to configure an MSSql docker container in Mac."
