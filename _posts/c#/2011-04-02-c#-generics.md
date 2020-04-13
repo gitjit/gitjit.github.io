@@ -13,3 +13,4 @@ references: [
 excerpt: "This post is about generics in C#"
 ---  
 
+![](img/2020-04-12-18-10-26.png)
