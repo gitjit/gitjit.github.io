@@ -14,4 +14,4 @@ excerpt: "This post is about generics in C#"
 ---  
 This is about Generics in C#.  
 
-![](img/2020-04-12-18-10-26.png)
+![](../../images/2020-04-12-18-10-26.png)
