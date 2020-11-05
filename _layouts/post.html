@@ -40,7 +40,7 @@
                     <!--show tags, download, share, date posted-->
 
                     <div class="row">
-                        <div class="group1 col-sm-6 col-md-6">
+                        <div>
                             <!--tags-->
                             <span class="glyphicon glyphicon-bookmark"></span> {% for tag in page.tags %}
                             <a href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}" title = "posted in {{tag}}">{{tag}}</a> {% unless forloop.last
@@ -86,12 +86,12 @@
                 </div>
                 <!--sidebar-->
                 
-                  <!--
+                <!-- 
                 <div class="col-md-4">
 
                     {% include sidepost.html %}
 
-                </div>-->
+                </div> -->
 
             </div>
         </div>
