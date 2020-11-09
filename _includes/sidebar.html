@@ -16,7 +16,7 @@
         </div>
         <ul class="list-group">
              {% for post in site.posts limit:5 %}
-                <li class="list-group-item"><a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></li>
+                <a class="list-group-item" href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a>
              {% endfor %}
         
         </ul>
