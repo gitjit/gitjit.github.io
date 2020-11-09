@@ -48,13 +48,6 @@ The previous two commands were not executed immediately. You must type GO on a
 
 If everything goes well you should have an MSSql running in your Mac. 
 
-<script src="https://gist.github.com/gitjit/79c186e87471fb938b7f9a0add20c871"></script>
-{% gist 79c186e87471fb938b7f9a0add20c871 %}
-
-https://gist.github.com/gitjit/79c186e87471fb938b7f9a0add20c871
-https://gist.github.com/Untrusted-Game/80022c4c4b30d9e96818658c4f3bb5d9. 
-
-
 Enjoy coding... !
 
 
