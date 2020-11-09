@@ -3,6 +3,8 @@ body{
     background-color:#101010;
     color: #FFFFFF;
     font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 27px;
     //body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
 }
 
