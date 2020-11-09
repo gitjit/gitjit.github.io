@@ -116,7 +116,10 @@ hr.style-eight:after {
   font-size:10px;
   color:#4dc9f6;
 }
-.list-group-mine .list-group-item{
-     background-color: #2F2F2F;
+.list-group-mine .list-group-item {
+  background-color: #101010;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
 
