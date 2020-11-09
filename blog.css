@@ -41,10 +41,16 @@ body{
     color: #872525;
     border: 2px solid #ddd;
 }
-
+/*
 h3,h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}*/
 
+h2{
+    color:#ffff94;
+}
+h3{
+    color:#ffffad;
 }
 /*
 p{
