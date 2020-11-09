@@ -1,7 +1,7 @@
 body{
     margin-top: 75px;
     background-color:#101010;
-    color: #FFFFFF;
+    color: #E0E0E0;
     font-family: 'Lora', serif;
    
     //body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
@@ -47,10 +47,10 @@ h3,h2 {
 }*/
 
 h2{
-    color:#ffff94;
+    color:#C0FF40;
 }
 h3{
-    color:#ffffad;
+    color:#C0FF80;
 }
 /*
 p{
