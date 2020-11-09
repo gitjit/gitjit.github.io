@@ -1,6 +1,10 @@
 body{
     margin-top: 75px;
-    body {font: 15px/1.75em 'Open Sans', Helvetica, Arial, sans-serif; background: #373737; color: #e5e5e5; font-weight: 300;}
+    background-color:#101010;
+    color: #E0E0E0;
+    font-family: 'Lora', serif;
+   
+    //body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
 }
 
 
@@ -37,21 +41,35 @@ body{
     color: #872525;
     border: 2px solid #ddd;
 }
-
+/*
 h3,h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}*/
 
+h2{
+    color:#C0FF40;
 }
-
+h3{
+    color:##6f924c;
+}
+/*
 p{
-    font-family: 'Open Sans', sans-serif;
-}
-
-.lead {
-    margin-bottom: 10px;
+    font-family: 'Lora','Open Sans';
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
+}*/
+
+
+p{
+    font-size: 18px;
+    line-height: 27px;;
+}
+
+.lead {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 
@@ -103,3 +121,10 @@ hr.style-eight:after {
   font-size:10px;
   color:#4dc9f6;
 }
+a.list-group-item {
+  background-color: #101010;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+
