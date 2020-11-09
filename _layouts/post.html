@@ -41,7 +41,7 @@
                     <!--show tags, download, share, date posted-->
 
                     <div class="row">
-                        <div>
+                        <div class="group1 col-sm-6 col-md-6">
                             <!--tags-->
                             <span class="glyphicon glyphicon-bookmark"></span> {% for tag in page.tags %}
                             <a href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}" title = "posted in {{tag}}">{{tag}}</a> {% unless forloop.last
