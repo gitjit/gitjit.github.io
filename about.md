@@ -8,7 +8,7 @@ title: About
     <span>Here's the overlay text</span>
 </div>-->
 
-My name is **Jithesh Chandrasekharan**.I am passionate about programming and have been working as a Software Engineer/Architect for more than a decade now.
+My name is *Jithesh Chandrasekharan*.I am passionate about programming and have been working as a Software Engineer/Architect for more than a decade now.
 I love what I do and hope you find this blog useful.  
 
 **JMedium** (Jithesh's medium) is a programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
