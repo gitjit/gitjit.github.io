@@ -8,7 +8,7 @@ title: About
     <span>Here's the overlay text</span>
 </div>-->
 
-My name is *Jithesh Chandrasekharan*.I am passionate about programming and have been working as a Software Engineer/Architect for more than a decade now.
+My name is *Jithesh Chandrasekharan*. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
 I love what I do and hope you find this blog useful.  
 
 **JMedium** (Jithesh's medium) is a programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
@@ -23,8 +23,8 @@ Resume : <span><a href="#"><i class="fa fa-linkedin"></i></a></span>  -->
 
 <div style="text-align: center">
   
- <span style="margin-right:5px; "><a href="mailto:jitheshc@gmail.com?subject=Mail from Data-Tricks.com contact"><i class="fa fa-envelope fa share-button" style="font-size:36px;"></i></a></span>
- <span style="margin-right:5px; "><a href="https://twitter.com/jithchan" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></span> <span style="margin-right:5px"><a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></span >  <span style="margin-right:5px" ><a href="#" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a></span> 
+ <span style="margin-right:5px; "><a href="mailto:jitheshc@gmail.com?subject=Mail from JMedium.com contact"><i class="fa fa-envelope fa share-button" style="font-size:36px;"></i></a></span>
+ <span style="margin-right:5px; "><a href="https://twitter.com/jitbytes" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></span> <span style="margin-right:5px"><a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></span >  <span style="margin-right:5px" ><a href="https://www.linkedin.com/in/jitheshc/" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a></span> 
 </div>
 
 
