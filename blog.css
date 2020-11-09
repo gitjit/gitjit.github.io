@@ -2,7 +2,8 @@ body{
     margin-top: 75px;
     background-color:#000000;
     color: #FFFFFF;
-    body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
+    font-family: 'Lora', serif;
+    //body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
 }
 
 
