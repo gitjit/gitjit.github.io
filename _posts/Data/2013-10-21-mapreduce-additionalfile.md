@@ -3,7 +3,7 @@ layout: post
 title: "MapReduce : Passing additional file"
 description: "Passing additional file in MapReduce"
 date:   2013-10-21
-tags: [Hadoop,DataEngineer]
+tags: [Hadoop,Data Engineering]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
