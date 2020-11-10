@@ -9,7 +9,7 @@ tagline: "Spice up your coding!"
 markdown: kramdown
 kramdown:
     auto_ids: false
-paginate: 4
+paginate: 6
 paginate_path: 'page:num/'
 permalink: :title/
 gems :
