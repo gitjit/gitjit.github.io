@@ -3,9 +3,8 @@ layout: page
 title: About
 ---
 
-<div class="imgHolder">
+<div style="text-align: center">
     <img src="../images/me.png" class ="img-responsive"/>
-    <span>Here's the overlay text</span>
 </div>
 
 My name is *Jithesh Chandrasekharan*. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
