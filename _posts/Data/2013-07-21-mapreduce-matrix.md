@@ -3,7 +3,7 @@ layout: post
 title: "MapReduce : Matrix Multiplication"
 description: "Understanding mapreduce through matrix multiplication"
 date:   2013-07-21
-tags: [Hadoop,DataEngineer]
+tags: [Hadoop, Data Engineer]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
