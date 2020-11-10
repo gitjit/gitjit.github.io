@@ -11,7 +11,7 @@
   <ul class="list-group">
   {% for post in site.tags[tag] %}
      <a class="list-group-item"  href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
-                {{post.title}}</a>
+                {{post.title}}-{{post.date | date: "%b %d, %Y" }}</a>
   {% endfor %}
    <!--<li class="list-group-item"><a href="#top" title="return to top">return to top</a></li>-->
   </ul>
