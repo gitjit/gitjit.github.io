@@ -10,7 +10,7 @@
     </div>
     <ul class="list-group">
         {% for tag in sortedTags %}
-        <a class="list-group-item" href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}">{{tag}} ({{ site.tags[tag].size }})</a>
+        <a class="list-group-item" href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}"> <small> {{tag}} ({{ site.tags[tag].size }} </small>)</a>
         {% endfor %}
     </ul>
     
