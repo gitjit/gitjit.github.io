@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="imgCenter">
-    <img src="../images/jithesh.png" class ="img-responsive"/>
+    <img src="../images/jithesh.png"/>
 </div>
 
 My name is *Jithesh Chandrasekharan*. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
