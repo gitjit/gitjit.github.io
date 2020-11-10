@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="imgHolder">
-    <img src="images/me.png" class ="img-responsive"/>
+    <img src="../images/me.png" class ="img-responsive"/>
     <span>Here's the overlay text</span>
 </div>
 
