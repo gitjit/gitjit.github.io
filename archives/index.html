@@ -10,7 +10,7 @@
   <h3 >{{ tag }}</h3>
   <ul class="list-group">
   {% for post in site.tags[tag] %}
-     <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+     <a class="list-group-item"  href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
                 {{post.title}}</a>
   {% endfor %}
    <!--<li class="list-group-item"><a href="#top" title="return to top">return to top</a></li>-->
