@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<div class="imgCenter">
+<div class="text-center">
     <img src="../images/jithesh.png"/>
 </div>
 
