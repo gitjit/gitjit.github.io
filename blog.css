@@ -130,3 +130,9 @@ a.list-group-item {
   border-left-color: #fff;
   border-right-color: #fff;
 }
+
+
+#imgCenter {
+  width: 50%;
+  margin: 0 auto;
+}
