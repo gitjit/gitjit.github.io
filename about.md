@@ -3,10 +3,10 @@ layout: page
 title: About
 ---
 
-<!--<div class="imgHolder">
-    <img src="/images/header_image.jpg" class ="img-responsive"/>
+<div class="imgHolder">
+    <img src="images/me.png" class ="img-responsive"/>
     <span>Here's the overlay text</span>
-</div>-->
+</div>
 
 My name is *Jithesh Chandrasekharan*. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
 I love what I do and hope you find this blog useful.  
