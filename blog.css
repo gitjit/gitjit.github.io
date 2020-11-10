@@ -1,58 +1,56 @@
-body{
-    margin-top: 75px;
-    background-color:#101010;
-    color: #E0E0E0;
-    font-family: 'Lora', serif;
-   
-    //body {font: 15px/1.75em 'Lora','Open Sans', Helvetica, Arial, sans-serif; color:#FFFFFF; font-weight: 300;}
+body {
+  margin-top: 75px;
+  background-color: #101010;
+  color: #e0e0e0;
+  font-family: "Lora", serif;
 }
 
-
-@media (min-width: 768px) { /* tablets and up */
-    .group2 {
-        text-align: right;
-    }
+@media (min-width: 768px) {
+  /* tablets and up */
+  .group2 {
+    text-align: right;
+  }
 }
 
 .br-space {
-   display: block;
-   margin-bottom: 50px;
-   visibility: hidden;
+  display: block;
+  margin-bottom: 50px;
+  visibility: hidden;
 }
 
-#centerdiv{
-    margin: 0 auto;
-} 
+#centerdiv {
+  margin: 0 auto;
+}
 
 /*Overriding Bootstrap schemes*/
 
-.panel-default > .panel-heading
-{
-    color: #000; /*white*/
-    background-color: #c43e3e; /*red*/
-    border-color: #872525; /*dark red*/
+.panel-default > .panel-heading {
+  color: #000; /*white*/
+  background-color: #c43e3e; /*red*/
+  border-color: #872525; /*dark red*/
 }
 
-.pager li>a, .pager li>span {
-    display: inline-block;
-    padding: 5px 14px;
-    background-color: #f8f8ff;
-    border-radius: 15px;
-    color: #872525;
-    border: 2px solid #ddd;
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #f8f8ff;
+  border-radius: 15px;
+  color: #872525;
+  border: 2px solid #ddd;
 }
 /*
 h3,h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }*/
 
-h2{
-    color:#C0FF40;
-    font-size:25px;
+h2 {
+  color: #c0ff40;
+  font-size: 25px;
 }
-h3{
-    color:##6f924c;
-    font-size:22px;
+h3 {
+  color: #6f924c;
+  font-size: 22px;
 }
 /*
 p{
@@ -62,27 +60,24 @@ p{
     line-height: 1.4;
 }*/
 
-
-p{
-    font-size: 18px;
-    line-height: 27px;;
+p {
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .lead {
-    margin-bottom: 5px;
-    font-size: 18px;
-    line-height: 27px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 27px;
 }
-
 
 /* margin */
 
 .br-small {
-   display: block;
-   margin-bottom: 20px;
-   visibility: hidden;
+  display: block;
+  margin-bottom: 20px;
+  visibility: hidden;
 }
-
 
 /* hr index */
 
@@ -101,7 +96,7 @@ hr.style-eight {
   margin: 30 0;
 }
 hr.style-eight:after {
-  content: '\2665';
+  content: "\2665";
   display: inline-block;
   position: relative;
   top: -15px;
@@ -113,21 +108,20 @@ hr.style-eight:after {
 
 /*overide brand*/
 .navbar-brand {
-  line-height:15px;
-  padding-top:20px;
-  padding-bottom:10px;
+  line-height: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .navbar-brand small {
-  display:block;
-  font-size:10px;
-  color:#4dc9f6;
+  display: block;
+  font-size: 10px;
+  color: #4dc9f6;
 }
 a.list-group-item {
   background-color: #101010;
-  color: #C0C0FF;
+  color: #c0c0ff;
   border-top: 1px solid #0091b5;
   border-left-color: #fff;
   border-right-color: #fff;
 }
-

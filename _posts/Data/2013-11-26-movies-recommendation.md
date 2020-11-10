@@ -3,7 +3,7 @@ layout: post
 title: "MapReduce and Cosine Similarity : Movie Recommendation"
 description: "A simple movie recommendation program using mapreduce principles"
 date:   2013-11-26
-tags: [Hadoop,DataScience]
+tags: [Hadoop,DataEngineer]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",

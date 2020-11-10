@@ -3,7 +3,7 @@ layout: post
 title: "MapReduce : Chaining"
 description: "Mapreduce chaining where output of reducer will be input of another mapper."
 date:   2013-10-20
-tags: [Hadoop]
+tags: [Hadoop,DataEngineer]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",

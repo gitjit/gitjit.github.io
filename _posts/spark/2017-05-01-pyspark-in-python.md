@@ -3,7 +3,7 @@ layout: post
 title:  "Pyspark and Jupyter notebook setup in Ubuntu"
 description: "Setting up pyspark in Ubuntu linux"
 date:   2017-05-01
-tags: [Spark]
+tags: [Spark, DataEngineer]
 comments: true
 references: [
    "Apache Spark : https://spark.apache.org/",

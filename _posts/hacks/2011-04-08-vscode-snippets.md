@@ -3,7 +3,7 @@ layout: post
 title:  "Visual Studio Code : Snippets"
 description: "Adding custome snippets in VS Code"
 date:   2017-04-08
-tags: [Visual-Studio]
+tags: [Hacks/Tools]
 comments: true
 references: [
    "VSCode Youtube : https://www.youtube.com/watch?v=tBTISbnThTo",

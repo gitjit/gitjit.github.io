@@ -3,7 +3,7 @@ layout: post
 title:  "Pyspark and Jupyter notebook setup in Mac"
 description: "Setting up pyspark in Mac OS"
 date:   2017-06-01
-tags: [Spark]
+tags: [Spark, DataEngineer]
 comments: true
 references: [
    "Apache Spark : https://spark.apache.org/",

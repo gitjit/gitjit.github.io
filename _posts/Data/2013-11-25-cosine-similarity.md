@@ -3,7 +3,7 @@ layout: post
 title: "Cosine Similarity : Simple Example"
 description: "Cosine Similarity through simple example"
 date:   2013-11-25
-tags: [Hadoop,DataScience]
+tags: [Hadoop,DataEngineer]
 comments: false
 references: [
    "MapReduce : http://hadoopgeek.com/mapreduce-movie-recommendation/",
