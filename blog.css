@@ -44,6 +44,10 @@ h3,h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }*/
 
+.title{
+  color: #6f924c;
+}
+
 h2 {
   color: #c0ff40;
   font-size: 25px;
