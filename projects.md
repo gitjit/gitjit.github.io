@@ -8,10 +8,11 @@
          <span>
             <!-- <h3> {{project.name}}</h3> -->
             <span>
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a  target="_blank" href="{{project.github}}">
+              <span class="glyphicon glyphicon-download-alt"></span>
+              <a href="{{page.source}}" target="_blank" title="download source">code</a> 
+            <!-- <a  target="_blank" href="{{project.github}}">
                  <h3> {{project.name}}</h3>
-            </a>
+            </a> -->
             </span>
             <p> {{project.description}}</p>
              
