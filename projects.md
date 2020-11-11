@@ -2,17 +2,14 @@
     layout: archive
     title: 
 --- 
-    <table border = "1">
-         <tr>
-            <td>Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
-         </tr>
-         
-         <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
-         </tr>
-      </table>
-
+  <ul>
+      {% for member in site.data.members %}
+      <li>
+         <a href="https://github.com/{{ member.github }}">
+            {{ member.name }}
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
 
 
