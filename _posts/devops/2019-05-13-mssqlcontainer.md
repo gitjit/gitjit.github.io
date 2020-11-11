@@ -13,12 +13,11 @@ references: [
 excerpt: "This article shows step to configure an MSSql docker container in Mac."
 ---
 
-Recently I was trying to follow a tutorial on EFCore that actively uses MSSql. I was 
-using a Mac and hence decided to use Container.  Following are the steps I followed.
+Recently I was trying to follow a tutorial on EFCore that actively uses MSSql. I was using a Mac and hence decided to use Container.  
 
-Ensure you have installed docker for mac. you can download it from here.   
+Following are the steps I followed.
 
-https://docs.docker.com/v17.12/docker-for-mac/install/
+Ensure you have installed docker for mac. you can download it from [here](https://docs.docker.com/v17.12/docker-for-mac/install/).   
 
 I am using the image : mssql-server-linux:2017-latest.
 
