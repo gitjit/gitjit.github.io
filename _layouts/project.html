@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jithesh</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A programming journal by Jithesh">
-    <meta name="author" content="Jithesh Chandrasekharan">
-     {% seo %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A programming journal by Jithesh" />
+    <meta name="author" content="Jithesh Chandrasekharan" />
+    {% seo %}
     <!-- Bootstrap CSS file -->
-    <link href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link
+      href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ site.baseurl }}/bootstrap-3.3.7/css/bootstrap-theme.min.css"
+      rel="stylesheet"
+    />
 
-        <!--Google Fonts-->
+    <!--Google Fonts-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" href="{{site.baseurl}}/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    
+    <link
+      rel="stylesheet"
+      href="{{site.baseurl}}/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="{{ site.baseurl }}/blog.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body id="less_margin">
-
+  <body id="less_margin">
     <!--header-->
-   {% include menu.html %}
+    {% include menu.html %}
     <!--end header-->
 
     <div id="body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 style="color:#000">{{page.title}}</h2>
-                     {{content}}
-                </div>
+      <div class="container">
+        <div class="i-am-centered">
+          <div class="row">
+            <div>
+              <h2 style="color: #000">{{page.title}}</h2>
+              {{content}}
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <footer>
-       {% include footer.html %}
-    </footer>
-
-
+    <footer>{% include footer.html %}</footer>
 
     <!--Java Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>

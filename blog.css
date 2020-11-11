@@ -136,3 +136,5 @@ a.list-group-item {
   display: flex;
   justify-content: center;
 }
+
+.i-am-centered { margin: auto; max-width: 300px;}
