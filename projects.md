@@ -7,6 +7,7 @@
       <li class="list-group-item" style="background-color: transparent;">
          <span>
             <h3> {{project.name}} <span class="glyphicon glyphicon-download-alt"></span></h3>
+             <a  href="{{project.github}}"><i class="fa fa-github" aria-hidden="true">Source Code</i></a>
             <p> {{project.description}}</p>
              <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
          </span>
