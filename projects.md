@@ -6,17 +6,8 @@
       {% for project in site.data.projects %}
       <li class="list-group-item" style="background-color: transparent;">
          <span>
-            <h3> {{project.name}}</h3>
-             <span class="glyphicon glyphicon-download-alt"></span>
-            <!-- <span>
-              <span class="glyphicon glyphicon-download-alt"></span>
-              <a href="{{page.source}}" target="_blank" title="download source">code</a> 
-            <!-- <a  target="_blank" href="{{project.github}}">
-                 <h3> {{project.name}}</h3>
-            </a> -->
-            </span> -->
+            <h3> {{project.name}} <span class="glyphicon glyphicon-download-alt"></span></h3>
             <p> {{project.description}}</p>
-             
              <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
          </span>
       </li>
