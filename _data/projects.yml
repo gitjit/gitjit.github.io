@@ -23,11 +23,6 @@
   tag: Python
   description: A simple reverse shell application using python. No additional libraries are used.
 
-- name: Reverse shell using Python
-  github: https://github.com/gitjit/blog/tree/master/rev_shell
-  tag: Python
-  description: A simple reverse shell application using python. No additional libraries are used.
-
 - name: Cloud Friends
   github: https://github.com/gitjit/blog/tree/master/cloud_friends
   tag: AWS Lambda, Cloud Front, API Gateway, S3 Hosting
