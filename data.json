@@ -1,0 +1,16 @@
+{
+    "projects":[
+        {
+          "name": "Expense Tracker",
+          "date": "12/Nov/2022",
+          "tags": "C#, JS",
+          "description" : "This is a sample project 1"
+        },
+        {
+            "name": "Dynamo Tracker",
+            "date": "12/Nov/2020",
+            "tags": "Python, JS",
+            "description" : "This is a sample project 1"
+        }
+      ]
+}
