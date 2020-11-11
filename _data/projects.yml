@@ -1,14 +1,14 @@
-- project: Expense Tracker
+- name: Expense Tracker
   github: konklone
   tag: Xamarin, C#
   description: This project is to explore the Xamarin capability.
 
-- project: Expense Tracker 1
+- name: Expense Tracker 1
   github: konklone
   tag: Python, C#
   description: This project is to explore the Xamarin capability.
 
-- project: Expense Tracker 2
+- name: Expense Tracker 2
   github: konklone
   tag: Javascript, C#
   description: This project is to explore the Xamarin capability.

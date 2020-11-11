@@ -3,17 +3,23 @@
     title: 
 --- 
   <ul class="list-group">
-      {% for member in site.data.members %}
+      {% for project in site.data.projects %}
       <li  class="list-group-item" style="background-color: transparent;">
          <span>
-            <h3> Project 1 </h3>
-            <a  href="https://github.com/{{ member.github }}">
+            <h3> {{project.name}}</h3>
+            <p> {{project.description}}</p>
+            <!-- <a  href="https://github.com/{{ member.github }}">
                {{ member.name }}
-            </a>
+            </a> -->
          <span>
       </li>
       {% endfor %}
    </ul>
+
+<!-- project: Expense Tracker
+  github: konklone
+  tag: Xamarin, C#
+  description: This project is to explore the Xamarin capability. -->
 
    <!-- <ul class="list-group">
   {% for post in site.tags[tag] %}
