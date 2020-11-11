@@ -1,5 +1,5 @@
 --- 
-    layout: default
+    layout: archive
     title: 
 --- 
     <table border = "1">
