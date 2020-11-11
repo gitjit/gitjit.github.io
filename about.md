@@ -7,7 +7,7 @@ title:
     <img src="../images/jithesh.png"/>
 </div>
 
-My name is *Jithesh Chandrasekharan*. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
+My name is <span style="color:green;">Jithesh Chandrasekharan</span>. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
 I love what I do and hope you find this blog useful.  
 
 **JMedium** (Jithesh's medium) is a programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
