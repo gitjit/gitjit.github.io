@@ -2,68 +2,17 @@
     layout: default
     title: 
 --- 
-{% for post in paginator.posts limit:6 %}
-<article>
-    <h2><a  href="{{site.baseurl}}{{post.url}}">{{post.title }}</a></h2>
-
-    <!--category icon, date posted -->
-
-    <div class="row">
-        <div class="group1 col-sm-6 col-md-6">
-            <!--<span class="glyphicon glyphicon-folder-open"></span> <a href="#">Signs</a>-->
-            <span class="glyphicon glyphicon-bookmark"></span>
-            {% for tag in post.tags %}
-             <a  href="{{site.baseurl}}/archives/#{{ tag | cgi_escape }}">{{tag}}</a>
-            {% unless forloop.last %}, {% endunless %}{% endfor %}
-        </div>
-        <div class="group2 col-sm-6 col-md-6">
-            <!--<span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">20 Comments</a>-->
-            <span class="glyphicon glyphicon-time"></span>
-            <time itemprop="dateCreated" datetime="{{post.date}}">
-                                {{ post.date | date: "%B %-d, %Y" }}</time>
-        </div>
-    </div>
-
-    <br class="br-small">
-
-    <!--<img src="http://placehold.it/900x300" class="img-responsive">-->
-
-   
-    <!--post excerpt-->
-    <p>{{post.excerpt | strip_html}}</p>
-
-    <!--continue reading-->
-    <p class="text-right">
-        <a href="{{site.baseurl}}{{post.url}}" class="text-right" title="continue reading...">
-            <i class="fa fa-arrow-down" aria-hidden="true" ></i>
-         </a>
-    </p>
-
-    <hr class="hr-shadow">
-
-</article>
-{% endfor %}
-
-<!--pagination   -->
-
-<ul class="pager">
-    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-    <li class="previous">
-        <a href="{{site.baseurl}}/">
-            <i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:24px;"></i></a>
-    </li>
-    {% else %}
-    <li class="previous">
-        <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">
-            <i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:24px;"></i></a>
-    </li>
-    {% endif %} {% endif %} {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" title="older posts">
-        <i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size:24px;"></i></a>
-    </li>
-    {% endif %} </div>
-</ul>
+<table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
 
  <!--sidebar-->
 <div class="col-md-4">
