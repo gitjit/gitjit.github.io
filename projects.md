@@ -7,7 +7,7 @@
       <li class="list-group-item" style="background-color: transparent;">
          <span>
             <h3>{{project.name}}</h3>
-            <p><a style="font-size:18px" target="_blank" href="{{project.github}}"><i class="fa fa-github" aria-hidden="true"></i>code</a></p>
+            <p><a style="font-size:18px" target="_blank" href="{{project.github}}"><i class="fa fa-github fa-fw" aria-hidden="true">Code</i></a></p>
             <p> {{project.description}}</p>
             <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
          </span>
