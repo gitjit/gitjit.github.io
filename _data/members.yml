@@ -1,8 +1,15 @@
-- name: Eric Mill
+- project: Expense Tracker
   github: konklone
+  tag: Xamarin, C#
+  description: This project is to explore the Xamarin capability.
 
-- name: Parker Moore
-  github: parkr
+- project: Expense Tracker 1
+  github: konklone
+  tag: Python, C#
+  description: This project is to explore the Xamarin capability.
 
-- name: Liu Fengyun
-  github: liufengyun
+- project: Expense Tracker 2
+  github: konklone
+  tag: Javascript, C#
+  description: This project is to explore the Xamarin capability.
+

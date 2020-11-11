@@ -1,5 +1,5 @@
 --- 
-    layout: archive
+    layout: project
     title: 
 --- 
   <ul class="list-group">
