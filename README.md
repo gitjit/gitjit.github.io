@@ -1,4 +1,8 @@
+
 # gitjit.github.io
+
+## DISCLAIMER : "THIS BLOG IS OLD and DOES NOT COMPILES IN LOCAL JEKYLL. ALSO BOOTSTRAP and ICONS ARE OLD. (Recently I got request to upgrade, but lot of work at this stage to upgrade. Better to create a new one with latest JEKYLL themes and Gems"
+
 My user page blog !
 
 commands
