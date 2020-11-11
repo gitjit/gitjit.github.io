@@ -1,6 +1,6 @@
 - name: Crash Box
   github: https://github.com/gitjit/crashbox_public.git
-  tag: Angular,Azure Functions, API Gateway, ASP.NET Core, Azure Devops
+  tag: Angular, Azure Functions, API Gateway, ASP.NET Core, Azure Devops
   description: This project is a Crashlytics clone. Its a full stack application which uses cloud technologies like Serverless and Angular. 
 
 - name: Expense Tracker 1

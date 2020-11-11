@@ -9,9 +9,11 @@
             <!-- <h3> {{project.name}}</h3> -->
             <a  href="{{project.github}}">
                  <h3> {{project.name}}</h3>
+                 <i class="fa fa-github" aria-hidden="true"></i>
             </a>
             <p> {{project.description}}</p>
-             <span class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
+             
+             <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
          </span>
       </li>
       {% endfor %}
