@@ -5,9 +5,9 @@
   <ul class="list-group">
       {% for member in site.data.members %}
       <li>
-         <span>
+         <span class="list-group-item">
             <h3> Project 1 </h3>
-            <a class="list-group-item" href="https://github.com/{{ member.github }}">
+            <a  href="https://github.com/{{ member.github }}">
                {{ member.name }}
             </a>
          <span>
