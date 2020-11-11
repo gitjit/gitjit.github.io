@@ -6,9 +6,10 @@
       {% for project in site.data.projects %}
       <li class="list-group-item" style="background-color: transparent;">
          <span>
-            <h3><a href="{{project.github}}"><i class="fa fa-github" aria-hidden="true">{{project.name}}</i></a></h3>
+            <h3>{{project.name}}</h3>
             <p> {{project.description}}</p>
-             <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
+            <a href="{{project.github}}"><i class="fa fa-github" aria-hidden="true">source</i></a>
+            <span style=" color:red" class="glyphicon glyphicon-bookmark"></span> {{project.tag}}
          </span>
       </li>
       {% endfor %}
