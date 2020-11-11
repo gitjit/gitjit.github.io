@@ -1,7 +1,7 @@
-- name: Expense Tracker
+- name: Crash Box
   github: konklone
-  tag: Xamarin, C#
-  description: This project is to explore the Xamarin capability.
+  tag: Angular,Azure Functions, API Gateway, ASP.NET Core, Azure Devops
+  description: This project is a Crashlytics clone. Its a full stack application which uses cloud technologies like Serverless and Angular. 
 
 - name: Expense Tracker 1
   github: konklone
