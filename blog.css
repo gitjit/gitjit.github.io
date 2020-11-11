@@ -141,3 +141,8 @@ a.list-group-item {
   float: none;
   margin: 0 auto;
 }
+
+.masking h2{
+  color: #FFFFFF;
+  -webkit-mask-box-image: url(mask.png) 0 0 repeat;
+}
