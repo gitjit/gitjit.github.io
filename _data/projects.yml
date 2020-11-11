@@ -3,6 +3,14 @@
   tag: Angular, Azure Functions, API Gateway, ASP.NET Core, Azure Devops
   description: This project is a Crashlytics clone. Its a full stack application which uses cloud technologies like Serverless and Angular. 
 
+- name: Cloud Friends
+  github: https://github.com/gitjit/blog/tree/master/cloud_friends
+  tag: AWS Lambda, Cloud Front, API Gateway, S3 Hosting
+  description: Our objective here is to develop a simple web application authenticated using Amazon Cognito and hosted in S3.
+    This web application will talk to a Rest API we built using API Gateway backed by Lambda and Dynamo Db. 
+    We will also add Cloud front support to our web application. By the end of this article,
+    you should have enough practical knowledge about these AWS services.
+
 - name: Authenticate Angular App using Azure AD B2C
   github: https://github.com/gitjit/blog/tree/master/jitbox
   tag: Azure B2C, Angular
@@ -23,10 +31,3 @@
   tag: Python
   description: A simple reverse shell application using python. No additional libraries are used.
 
-- name: Cloud Friends
-  github: https://github.com/gitjit/blog/tree/master/cloud_friends
-  tag: AWS Lambda, Cloud Front, API Gateway, S3 Hosting
-  description: Our objective here is to develop a simple web application authenticated using Amazon Cognito and hosted in S3.
-    This web application will talk to a Rest API we built using API Gateway backed by Lambda and Dynamo Db. 
-    We will also add Cloud front support to our web application. By the end of this article,
-    you should have enough practical knowledge about these AWS services.
