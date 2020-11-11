@@ -8,7 +8,7 @@
          <span>
             <!-- <h3> {{project.name}}</h3> -->
             <a  href="https://github.com/{{ member.github }}">
-                {{project.name}}
+                 <h3> {{project.name}}</h3>
             </a>
             <p> {{project.description}}</p>
          </span>
