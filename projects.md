@@ -6,11 +6,11 @@
       {% for project in site.data.projects %}
       <li class="list-group-item" style="background-color: transparent;">
          <span>
-            <h3> {{project.name}}</h3>
+            <!-- <h3> {{project.name}}</h3> -->
+            <a  href="https://github.com/{{ member.github }}">
+                {{project.name}}
+            </a>
             <p> {{project.description}}</p>
-            <!-- <a  href="https://github.com/{{ member.github }}">
-               {{ member.name }}
-            </a> -->
          </span>
       </li>
       {% endfor %}
