@@ -4,14 +4,14 @@
 --- 
   <ul class="list-group">
       {% for project in site.data.projects %}
-      <li  class="list-group-item" style="background-color: transparent;">
+      <li class="list-group-item" style="background-color: transparent;">
          <span>
             <h3> {{project.name}}</h3>
             <p> {{project.description}}</p>
             <!-- <a  href="https://github.com/{{ member.github }}">
                {{ member.name }}
             </a> -->
-         <span>
+         </span>
       </li>
       {% endfor %}
    </ul>
