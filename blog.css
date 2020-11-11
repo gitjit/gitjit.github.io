@@ -137,4 +137,7 @@ a.list-group-item {
   justify-content: center;
 }
 
-.i-am-centered { margin: auto; max-width: 300px;}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
