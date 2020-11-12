@@ -47,6 +47,32 @@ The previous two commands were not executed immediately. You must type GO on a
 
 If everything goes well you should have an MSSql running in your Mac. 
 
+<pre>
+   <code class="language-c#">
+
+   // Creates a new database
+        public async Task<bool> CreateDatabaseAsync(string db)
+        {
+            try
+            {
+                var result = await _cosmosClient.CreateDatabaseIfNotExistsAsync(db);
+                if (result.Resource.Id != null)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+   </code>
+</pre>
+ 
+
 Enjoy coding... !
 
 
