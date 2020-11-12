@@ -72,6 +72,25 @@ If everything goes well you should have an MSSql running in your Mac.
    </code>
 </pre>
  
+ ```csharp
+  public async Task<bool> CreateDatabaseAsync(string db)
+        {
+            try
+            {
+                var result = await _cosmosClient.CreateDatabaseIfNotExistsAsync(db);
+                if (result.Resource.Id != null)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+```
 
 Enjoy coding... !
 
