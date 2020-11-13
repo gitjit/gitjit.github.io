@@ -13,7 +13,7 @@ references: [
 
 In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy.
 
-<div class="text-center">
+<!-- <div class="text-center">
     <img src="../../images/2020-11-13-11-36-03.png"/>
-</div>
-<!-- ![Iam](../../images/2020-11-13-11-36-03.png){:class="imgCenter"}  -->
+</div> -->
+![Iam](../../images/2020-11-13-11-36-03.png){:class="imgCenter"}
