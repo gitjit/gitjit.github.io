@@ -6,7 +6,7 @@ date:   2020-11-13
 tags: [AWS]
 comments: false
 references: [
-   "MapReduce : https://aws.amazon.com/iam/",
+   "Iam : https://aws.amazon.com/iam/",
    
 ]
 ---  
