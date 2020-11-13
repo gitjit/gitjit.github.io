@@ -11,8 +11,6 @@ references: [
 ]
 ---  
 
-In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy.
+In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy. 
 
-<div class="text-center">
-    <img class="img-responsive" src="../../images/2020-11-13-11-36-03.png"/>
-</div>
+![Iam](../../images/2020-11-13-11-36-03.png){:class="img-responsive" :height="500px" width="500px"} 
