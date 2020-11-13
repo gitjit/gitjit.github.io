@@ -14,4 +14,4 @@ references: [
 In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy.
 
 
-![](../../images/2020-11-13-11-36-03.png)
+![](../../images/2020-11-13-11-36-03.png){{:class="img-responsive"}}
