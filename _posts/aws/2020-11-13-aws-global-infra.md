@@ -33,4 +33,4 @@ As explained in the table above the regional cache location sits between the Clo
 ![](../../images/2020-11-13-23-13-26.png)
 
 
-<img src="../../images/2020-11-13-23-14-26.png" class="img-responsive" width="50%">
+<img src="../../images/2020-11-13-23-14-26.png" class="img-responsive" width="100%">
