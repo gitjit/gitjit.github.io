@@ -13,8 +13,8 @@ references: [
 
 Objective of this post is to gain a better understanding on Networking in AWS and gain a deep understanding on VPC in AWS.
 
-- [IP Subnetting](#ip-subnetting)
-- [Private Address Space](#private-address-space)
+* TOC
+{:toc}
 
 ## IP Subnetting  
 IP addresses uniquely identify a device in a network.  IP addresses can be classified as public IP or Private IP. IP addresses discoverable on the internet are called Public IP addresses. Public IP's are globally unique, while private IP is unique within a network. Private IP's are usually assigned to devices in a home/office network.
@@ -23,5 +23,5 @@ IP addresses uniquely identify a device in a network.  IP addresses can be class
 ## Private Address Space 
 
 The consortium that manages IP standards has reserved specific IP address blocks as Private address space. 
-
+<img src="../../images/2020-11-14-11-54-03.png" class="img-responsive"/>
 ![](../../images/2020-11-14-11-54-03.png)
