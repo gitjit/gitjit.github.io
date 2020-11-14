@@ -12,7 +12,8 @@ references: [
 ---  
 
 In this post we are going to discuss some essential topics we need to understand about AWS Global Infrastructure. Following are the major players in AWS Infrastructure. 
-![Iam](../../images/2020-11-13-23-11-07.png){:class="img-responsive centerimg"} 
+<img src="../../images/2020-11-13-23-11-07.png" class="img-responsive"
+
 
 Current numbers are as shown below.  
 ![Iam](../../images/2020-11-13-23-10-38.png){:class="img-responsive centerimg" :height="500px" width="500px"} 
