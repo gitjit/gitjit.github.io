@@ -11,6 +11,11 @@ references: [
 ]
 ---  
 
-In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy. 
+In this post we are going to discuss some essential we need to know about AWS IAM, Users and Policy.  
 
-![Iam](../../images/2020-11-13-11-36-03.png){:class="img-responsive centerimg" :height="500px" width="500px"} 
+## IAM Roles  
+Let us consider you have a Lambda function that needs to access some records in a DynamoDb table. By default Lambda does not have access to the DynamoDb records. In order for Lambda to access the DynamoDb records, we need to assign a "role" to the Lambda function. The role should have a policy attached to it which specifies the the permission to access the records.  
+
+## AWS Security Token Service (STS)  
+The AWS Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentilas for IAM users or users that you authenticate(federated users.)
+The AWS Security Token Service (STS) is a web service that enables you to request temporary
