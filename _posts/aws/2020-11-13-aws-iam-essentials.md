@@ -2,7 +2,7 @@
 layout: post
 title: "AWS Essentials : Identity and Access Management(IAM)"
 description: "AWS Identity and Access Management"
-date:   2020-11-13
+date:   2020-01-01
 tags: [AWS]
 comments: false
 references: [
@@ -39,7 +39,7 @@ Let us consider you have a Lambda function that needs to access some records in 
 
 ## AWS Security Token Service (STS)  
 The AWS Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentilas for IAM users or users that you authenticate(federated users.)    
-By default, AWS STS is available as a global service, and all AWS STS requests go to a single endpoint at *https://sts.amazonaws.com*.  
+By default, AWS STS is available as a global service, and all AWS STS requests go to a single endpoint at <https://sts.amazonaws.com>.  
 By default, STS is enable in all regions, but can be disabled if needed. The temporary credentials will always work globally.   
 Given below is an example in which a user in account (A) assumes a role specified in another account (B) to get temp credentials via STS to access the S3 bucket.
 
