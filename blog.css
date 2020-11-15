@@ -67,8 +67,9 @@ p{
 }*/
 
 p {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 30px;
+  font-weight: 200;
 }
 
 .lead {
