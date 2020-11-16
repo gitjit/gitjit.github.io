@@ -2,7 +2,7 @@
 layout: post
 title: "AWS Essentials : Identity and Access Management(IAM)"
 description: "AWS Identity and Access Management"
-date:   2020-01-01
+date:   2020-01-02
 tags: [AWS]
 comments: false
 references: [

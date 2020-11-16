@@ -2,7 +2,7 @@
 layout: post
 title: "AWS Essentials : AWS Global Infrastructure"
 description: "AWS Global Infrastructure"
-date:   2020-01-01
+date:   2020-01-02
 tags: [AWS]
 comments: false
 references: [
