@@ -2,7 +2,7 @@
 layout: post
 title: "AWS Essentials : Elastic IP"
 description: "AWS Elastic IP"
-date:   2020-01-05
+date:   2020-01-06
 tags: [AWS]
 comments: false
 references: [
