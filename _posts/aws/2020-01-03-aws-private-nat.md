@@ -51,3 +51,41 @@ As you can see the first two are already assigned to our existing subnets and we
 
 Now if you check we have only 1 route table associated with our VPC and they are configured as following.  This default route table created is called as Main route table and all subnets are by default associated with this main route table.  But if you check the routes of main route table, you can see an Internet Gateway is attached to that route. (That means if we want to create a private subnet we need to create a new route table).  
 
+### Create a Route table  
+Let us create a new route table in this VPC.  
+
+<img src="../../images/2020-11-17-09-25-40.png" class="img-responsive"/>
+
+By default this new route table doesn't have any other routes other than the local.  
+<img src="../../images/2020-11-17-09-28-22.png" class="img-responsive"/>
+
+### Create two subnets   
+
+We want our private instance to be in Private subnets. Make sure to chose next avaiable CIDR blocks from subnet generator.
+
+<img src="../../images/2020-11-17-09-29-34.png" class="img-responsive"/>
+
+<img src="../../images/2020-11-17-09-31-20.png" class="img-responsive"/>
+
+Now we have 4 subnets, but all are pointing to the main route table and hence private.  
+
+<img src="../../images/2020-11-17-09-32-23.png" class="img-responsive"/>  
+
+<img src="../../images/2020-11-17-09-33-31.png" class="img-responsive"/>  
+
+
+To make the new subnet private, we need to associate them with the new route table we created.  In order to do that open your route table and in subnet association, associate those two subnets.  
+
+<img src="../../images/2020-11-17-09-34-42.png" class="img-responsive"/>  
+
+Now let us create an EC2 instance in this private subnet and it should not be having any Public IP.  
+
+<img src="../../images/2020-11-17-09-36-41.png" class="img-responsive"/>  
+
+As expected, no public IP for this new Instance.  
+
+<img src="../../images/2020-11-17-09-37-42.png" class="img-responsive"/>  
+
+Now the question is how you can connect to this new Private instance ? For this we will have to create a Bastion Host. We will discuss more on this in the next blog post. 
+
+Happy coding !
