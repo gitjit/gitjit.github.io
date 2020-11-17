@@ -46,3 +46,8 @@ In our region we have two AZ's and hence it shows two subnet, but we can have mo
 <img src="../../images//2020-11-16-16-23-31.png" class="img-responsive"/>
 
 <img src="../../images//2020-11-16-16-24-32.png" class="img-responsive"/>
+
+As you can see the first two are already assigned to our existing subnets and we can use the next 12 available subnets.
+
+Now if you check we have only 1 route table associated with our VPC and they are configured as following.  This default route table created is called as Main route table and all subnets are by default associated with this main route table.  But if you check the routes of main route table, you can see an Internet Gateway is attached to that route. (That means if we want to create a private subnet we need to create a new route table).  
+
