@@ -11,7 +11,7 @@ references: [
 ]
 ---  
 
-The objective of this post is to get a good understanding on Private subnets and NAT in AWS. We will see how to create a private subnet and add NAT support for the private subnet.
+The objective of this post is to get a good understanding on subnetting in VPC and how to create a private subnet in VPC. Let's get started. 
 
 Let us start with a clean slate. When ever you create an EC2 Instance in a particular region, AWS creates following services in the background for us. 
 
