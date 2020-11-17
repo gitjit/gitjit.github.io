@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AWS Essentials : AWS Private Subnet and NAT"
+title: "AWS Essentials : Private Subnets"
 description: "AWS Private Subnet and NAT"
 date:   2020-01-03
 tags: [AWS]
@@ -61,13 +61,13 @@ By default this new route table doesn't have any other routes other than the loc
 
 ### Create two subnets   
 
-We want our private instance to be in Private subnets. Make sure to chose next avaiable CIDR blocks from subnet generator.
+We want our new instance to be in Private subnets. Make sure to chose next avaiable CIDR blocks from subnet generator.
 
 <img src="../../images/2020-11-17-09-29-34.png" class="img-responsive"/>
 
 <img src="../../images/2020-11-17-09-31-20.png" class="img-responsive"/>
 
-Now we have 4 subnets, but all are pointing to the main route table and hence private.  
+Now we have 4 subnets, but all are pointing to the main route table and hence public.  
 
 <img src="../../images/2020-11-17-09-32-23.png" class="img-responsive"/>  
 
