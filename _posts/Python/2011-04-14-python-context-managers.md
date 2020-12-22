@@ -14,7 +14,7 @@ references: [
 excerpt: "In this post we will discuss some internals of Context Managers in Python and how to leverage that in our class, if we have to deal with resource management"
 ---
 
-Operating System resources must be release after our use. Some common resource handles are file, sockets, thread locks etc. So if our program is using these resources we need to ensure that we are releasing it after our use. A general pattern of handling resource is like this. 
+Operating System resources must be released after our use. Some common resource handles are file, sockets, thread locks etc. So if our program is using these resources we need to ensure that we are releasing it after our use. A general pattern of handling resource is like this. 
 
 <pre class='line-numbers'>
 <code class='language-python'>
@@ -36,10 +36,40 @@ What will happen if there was an exception in between and f.close() never happen
 </code>
 </pre>
 
-In this case its guarantee that the file handle gets released. Let us see how context managers works.
+In this case its guaranteed that the file handle gets released. Let us see how context managers works.   
+You can handle context support to your type, by implementing two special methods as shown below.  
 
 
+<pre class='line-numbers'>
+<code class='language-python'>
+class Context(object):
+    def __enter__(self):
+        print('Entering..')
+        return 'Some value'
+    
+    def __exit__(self,ty, val, tb):
+        print('Exiting..')
+        print(ty, val, tb)
 
+</code>
+</pre>
+
+<pre class='line-numbers'>
+<code class='language-bash'>
+from context import Context
+c = Context()
+ with c:
+     print('some work')
+</code>
+</pre>
+
+```bash
+Entering..
+some work
+Exiting..
+None None None
+```
+As you can see Entering and Exit functions gets called and we can do our resource handling here.  
 
 _Coding is fun enjoy..._  
 
