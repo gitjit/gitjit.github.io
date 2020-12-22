@@ -5,7 +5,6 @@ description: "Generating a dictionary from CSV"
 date:   2011-04-07
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/py-kitchen/tree/master/apps/11-stock-calc"
 references: [
   "Standard library : https://docs.python.org/3/library/index.html",
    "CSV Reader : https://docs.python.org/3/library/csv.html",

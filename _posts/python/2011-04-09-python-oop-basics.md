@@ -5,7 +5,6 @@ description: "A python game to learn object oriented programming"
 date:   2011-04-09
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/py-kitchen/tree/master/apps/07.1-wizard_battle"
 references: [
    "Standard library : https://docs.python.org/3/library/index.html",
    "Python programming : https://pythonprogramming.net/",

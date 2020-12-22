@@ -5,7 +5,6 @@ description: "A simple use case of GetAttribute method in objects"
 date:   2011-04-10
 tags: [Python]
 comments: true
-source: "https://github.com/GitJit/py-kitchen/tree/master/apps/11.2-stock-calc-oops"
 references: [
    "Standard library : https://docs.python.org/3/library/index.html",
    "GetAttribute : https://docs.python.org/3/library/functions.html#getattr",
