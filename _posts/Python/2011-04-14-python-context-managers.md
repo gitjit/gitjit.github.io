@@ -53,14 +53,14 @@ class Context(object):
 </code>
 </pre>
 
-<pre class='line-numbers'>
-<code class='language-bash'>
+```python
+# sample
 from context import Context
 c = Context()
  with c:
      print('some work')
-</code>
-</pre>
+```
+
 
 ```bash
 Entering..
