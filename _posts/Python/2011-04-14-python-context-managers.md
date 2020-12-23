@@ -40,8 +40,7 @@ In this case its guaranteed that the file handle gets released. Let us see how c
 You can handle context support to your type, by implementing two special methods as shown below.  
 
 
-<pre class='line-numbers'>
-<code class='language-python'>
+```python
 class Context(object):
     def __enter__(self):
         print('Entering..')
@@ -50,8 +49,7 @@ class Context(object):
     def __exit__(self,ty, val, tb):
         print('Exiting..')
         print(ty, val, tb)
-</code>
-</pre>
+```
 
 ```python
 # sample
@@ -60,9 +58,10 @@ c = Context()
  with c:
      print('some work')
 ```
-
+output :  
 
 ```bash
+# outputs  
 Entering..
 some work
 Exiting..
