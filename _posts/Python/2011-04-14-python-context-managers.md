@@ -50,7 +50,6 @@ class Context(object):
     def __exit__(self,ty, val, tb):
         print('Exiting..')
         print(ty, val, tb)
-
 </code>
 </pre>
 
