@@ -40,7 +40,7 @@ In this case its guaranteed that the file handle gets released. Let us see how c
 You can handle context support to your type, by implementing two special methods as shown below.  
 
 
-```python
+```
 class Context(object):
     def __enter__(self):
         print('Entering..')

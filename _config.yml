@@ -4,11 +4,14 @@ description: "A technology journal by Jithesh Chandrasekharan"
 baseurl: "" 
 url: "https://jithesh.io" 
 tagline: "Spice up your coding!"
+highlighter: none
 
 # Build settings
 markdown: kramdown
 kramdown:
     auto_ids: false
+    syntax_highlighter_opts:
+      disable : true
 paginate: 6
 paginate_path: 'page:num/'
 permalink: :title/
