@@ -22,7 +22,7 @@ In Redux, the entire state of an application is stored in a single JavaScript ob
 
 ## Key Concepts in Redux  
 
-<img src='images/2024-08-31-13-22-37.png' class='img-responsive'>
+<img src='/images/2024-08-31-13-22-37.png' class='img-responsive'>
 
 
 ### Action
