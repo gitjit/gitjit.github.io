@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "GraphQL Essentials"
-description: "Understanding the essentials of GraphQL"
-date: 2024-07-12
-tags: [GRAPHQL]
+title: "Redux Essentials"
+description: "Understanding the essentials of Redux"
+date: 2022-01-12
+tags: [REACT]
 comments: false
-references: ["GraphQL : https://graphql.org/"]
+references: ["ReduxJS : https://redux.js.org/"]
 ---
 
 In this post we are going to discuss some essential topics we need to understand in AWS IAM.
