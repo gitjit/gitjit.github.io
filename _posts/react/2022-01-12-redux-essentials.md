@@ -22,7 +22,8 @@ In Redux, the entire state of an application is stored in a single JavaScript ob
 
 ## Key Concepts in Redux  
 
-![](2024-08-31-13-22-37.png)
+<img src='images/2024-08-31-13-22-37.png' class='img-responsive'>
+
 
 ### Action
 An action is a plain JavaScript object that describes what happened in the application. Every action has a type property, and it may also contain some data (payload).
