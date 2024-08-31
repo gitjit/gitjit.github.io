@@ -10,11 +10,11 @@ title:
 My name is <span style="color:green;">Jithesh Chandrasekharan</span>. I am passionate about programming and have been working as a Software Engineer for more than a decade now.
 I love what I do and hope you find this blog useful.  
 
-**JMedium** (Jithesh's medium) is a programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
+This is my programming journal, where I documents my experiments/experience with technologies using at work or for fun during my part time .
 
 My recent focus in on data and cloud technologies, so expect more posts on that topic.     
 
-<!--My favorite form of communication is Twitter, where you'll find me ranting 140 characters at a time at <span><a href="https://twitter.com/gitjit"><i class="fa fa-twitter"></i></a></span>.
+<!--My favorite form of communication is Twitter, where you'll find me ranting 140 characters at a time at <span><a href="https://twitter.com/jitbytes"><i class="fa fa-twitter"></i></a></span>.
 
 Resume : <span><a href="#"><i class="fa fa-linkedin"></i></a></span>  -->
 
