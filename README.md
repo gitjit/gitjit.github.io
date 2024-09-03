@@ -82,3 +82,4 @@ https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/
 </code></pre>
 
 
+docker run --rm -v "C:\dev\gitjit.github.io:/srv/jekyll" -p 4000:4000 jekyll/jekyll jekyll serve

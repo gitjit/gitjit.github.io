@@ -9,12 +9,14 @@ highlighter: none
 # Build settings
 markdown: kramdown
 kramdown:
-    auto_ids: false
-    syntax_highlighter_opts:
-      disable : true
+  auto_ids: false
+  syntax_highlighter_opts:
+    disable : true
+
 paginate: 6
 paginate_path: 'page:num/'
 permalink: :title/
-gems :
+
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
